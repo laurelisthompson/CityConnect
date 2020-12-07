@@ -2,7 +2,7 @@
 
 ## Background
 
-Expeditions will be a single-page app that features a circle packing map filtered by continent, country, and experience. As you interact with the map you can highlight various places or experiences you are interested to learn more about the types of travel experiences and locations you are interested in exploring.
+Expeditions will be a single-page app that features a circle packing map filtered by continent, country, and experience. As you interact with the map you can highlight various places or experiences you are interested to learn more about the types of travel experiences and locations you are interested in exploring. By exploring a map of experiences in a manner removed from a typical map, users can be exposed to locations and experiences they wouldn't have known to look for.
 
 ## Functionality & MVP
 
