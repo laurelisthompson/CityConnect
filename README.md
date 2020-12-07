@@ -43,4 +43,4 @@ Expeditions will use:
 
 ## Bonus Feature
 
-Allow user to change the mapping from location based to experience type. Instead of experiencing the map from global - continent - country - experience they could select to view from type of experience (adventure, urban, etc) - country - experience. This would add addtional interaction for explorers who know more about the types of experiences they are looking for.
+Allow user to change the mapping from location based to experience type. Instead of experiencing the map from global -> continent -> country -> experience they could select to view from type of experience (adventure, urban, etc) -> country -> experience. This would add addtional interaction for explorers who know more about the types of experiences they are looking for.
