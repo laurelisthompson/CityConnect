@@ -25,6 +25,12 @@ export default graphicMap => {
         };
     });
 
+    const textLabel = svg.append("g");
+    textLabel.selectAll("text");
+    textLabel.data(root.descendants());
+    textLabel.join("text");
+
+
     //define functions
     zoom = (event, node) => {
         const oldFocus = focus;
