@@ -74,7 +74,7 @@ pack = (dataObj) => {
 
 	//create root node by passing into d3 hierarchy, calculating value and sorting by nodes values
 	const rootNode = d3.heirarchy(dataObj); 
-	rootNode.sum(d => d.value);
+	rootNode.sum(node => node.value);
 	rootNode.sort((a, b) => b.value - a.value);
 
 	packInstance(rootNode);
