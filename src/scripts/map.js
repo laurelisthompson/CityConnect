@@ -8,6 +8,10 @@ export default graphicMap => {
 	let focus = root; //keep track of which circle the chart is focused on
 	let view;
 
+	//width and height of svg
+	const width = 900;
+	const height = 900;
+
 	const svg = d3.create("svg");
 	svg.attr("viewBox", [0, 0, width, height]);
 	//add additional styling
@@ -17,20 +21,22 @@ export default graphicMap => {
 	node.selectAll("circle");
 	node.data(root.descendants().slice(1)); //get all node children, exclude itself
 	node.join("circle");
-	//add additional styling
 	node.on("click", (event, node) => {
 		if (focus !== node) {
 			zoom(event, node);
 			event.stopPropogation();
 		};
 	});
+	//add additional styling to nodes
 
 	const textLabel = svg.append("g");
 	textLabel.selectAll("text");
 	textLabel.data(root.descendants());
 	textLabel.join("text");
-
-
+	textLabel.style("fill-opacity", node => {
+		node.parent === root ? 1 : 0
+	});
+	//add additional styling to labels
 
 	//define functions
 	zoomTo([root.x, root.y, root.r * 2]);
@@ -63,6 +69,8 @@ export default graphicMap => {
 			const interpolator = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2]);
 			return t => zoomTo(interpolator(t));
 		});
+
+		//TO DO filter/transition labels
 	};
 };
 
@@ -79,6 +87,3 @@ pack = (dataObj) => {
 
 	packInstance(rootNode);
 };
-
-const width = 900;
-const height = 900;
