@@ -3,16 +3,16 @@ export const europe = [
         name: "Croatia",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
             {
-                name = "exp 2",
-                value = 1500
+                name: "exp 2",
+                value: 1500
             },
             {
-                name = "exp 3",
-                value = 1500
+                name: "exp 3",
+                value: 1500
             },
         ]
     },
@@ -20,12 +20,12 @@ export const europe = [
         name: "Georgia",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
             {
-                name = "exp 2",
-                value = 1500
+                name: "exp 2",
+                value: 1500
             },
         ]
     },
@@ -33,12 +33,12 @@ export const europe = [
         name: "Netherlands",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
             {
-                name = "exp 2",
-                value = 1500
+                name: "exp 2",
+                value: 1500
             },
         ]
     },
@@ -46,20 +46,20 @@ export const europe = [
         name: "Romania",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
             {
-                name = "exp 2",
-                value = 1500
+                name: "exp 2",
+                value: 1500
             },
             {
-                name = "exp 3",
-                value = 1500
+                name: "exp 3",
+                value: 1500
             },
             {
-                name = "exp 4",
-                value = 1500
+                name: "exp 4",
+                value: 1500
             },
         ]
     },

@@ -1,3 +1,5 @@
-
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+body{background-color:#5da1e0}body h1{font-family:"Montserrat";font-size:50px;font-weight:500;font-style:italic;display:flex;justify-content:center;color:#f7f7f7;margin-bottom:20px}body button{font-family:"Montserrat";background-color:#5da1e0;border:1px solid #f7f7f7;color:#f7f7f7;padding:5px 10px;border-radius:3px;justify-content:center;margin-right:5px}#navbar{display:flex;justify-content:center}
 
 /*# sourceMappingURL=main.css.map*/

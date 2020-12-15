@@ -3,12 +3,12 @@ export const africa = [
         name: "Algeria",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
             {
-                name = "exp 2",
-                value = 1500
+                name: "exp 2",
+                value: 1500
             },
         ]
     },
@@ -16,16 +16,16 @@ export const africa = [
         name: "Botswana",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
             {
-                name = "exp 2",
-                value = 1500
+                name: "exp 2",
+                value: 1500
             },
             {
-                name = "exp 3",
-                value = 1500
+                name: "exp 3",
+                value: 1500
             },
         ]
     },
@@ -33,8 +33,8 @@ export const africa = [
         name: "Cape Verde",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
         ]
     },
@@ -42,12 +42,12 @@ export const africa = [
         name: "Kenya",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
             {
-                name = "exp 2",
-                value = 1500
+                name: "exp 2",
+                value: 1500
             },
         ]
     },
@@ -55,8 +55,8 @@ export const africa = [
         name: "Madagascar",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
         ]
     },
@@ -64,12 +64,12 @@ export const africa = [
         name: "Namibia",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
             {
-                name = "exp 2",
-                value = 1500
+                name: "exp 2",
+                value: 1500
             },
         ]
     },
@@ -77,16 +77,16 @@ export const africa = [
         name: "Senegal",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
             {
-                name = "exp 2",
-                value = 1500
+                name: "exp 2",
+                value: 1500
             },
             {
-                name = "exp 3",
-                value = 1500
+                name: "exp 3",
+                value: 1500
             },
         ]
     },
@@ -94,20 +94,20 @@ export const africa = [
         name: "South Africa",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
             {
-                name = "exp 2",
-                value = 1500
+                name: "exp 2",
+                value: 1500
             },
             {
-                name = "exp 3",
-                value = 1500
+                name: "exp 3",
+                value: 1500
             },
             {
-                name = "exp 4",
-                value = 1500
+                name: "exp 4",
+                value: 1500
             },
         ]
     },
@@ -115,12 +115,12 @@ export const africa = [
         name: "Tunisia",
         children: [
             {
-                name = "exp 1",
-                value = 1500
+                name: "exp 1",
+                value: 1500
             },
             {
-                name = "exp 2",
-                value = 1500
+                name: "exp 2",
+                value: 1500
             },
         ]
     },

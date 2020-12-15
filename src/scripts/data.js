@@ -1,12 +1,12 @@
-import africa from './continents/africa'
-import antartica from './continents/antartica'
-import asia from './continents/asia'
-import europe from './continents/europe'
-import northAmerica from './continents/north_america'
-import oceania from './continents/oceania'
-import southAmerica from './continents/south_america'
+import {africa} from './continents/africa.js';
+import {antartica} from './continents/antartica.js';
+import {asia} from './continents/asia.js';
+import {europe} from './continents/europe.js';
+import {northAmerica} from './continents/north_america.js';
+import {oceania} from './continents/oceania.js';
+import {southAmerica} from './continents/south_america.js';
 
-export default dataObj = {
+export const dataObj = {
 	name: "global",
 	children: [
 		{
