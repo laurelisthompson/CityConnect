@@ -8,10 +8,13 @@ export default graphicMap => {
 	let focus = root; //keep track of which circle the chart is focused on
 	let view;
 
-	const svg = d3.create("svg");
-	svg.attr("viewBox", [0, 0, width, height]);
+	let svg = d3.create("svg");
+	svg = svg.attr("viewBox", [0, 0, 900, 900]);
+	svg = svg.on("click", (event) => zoom(event, root));
 	//add additional styling
-	svg.on("click", (event) => zoom(event, root));
+	svg.style("display", "block");
+	svg.style("margin", "0 -16px");
+	svg.style("background-color", "blue")
 
 	let node = svg.append("g");
 	node = node.selectAll("circle");
@@ -23,6 +26,7 @@ export default graphicMap => {
 			event.stopPropogation();
 		};
 	});
+	node.attr("fill", "white")
 	//add additional styling to nodes
 
 	let textLabel = svg.append("g");
@@ -35,25 +39,33 @@ export default graphicMap => {
 	//add additional styling to labels
 
 	//define functions
-	zoomTo([root.x, root.y, root.r * 2]);
 	const zoomTo = (v) => { //takes in a view 
 		//find proportion of the width to the diameter
 		const prop = width / v[2];
 		view = v; 
 		
 		//transform/translate labels and nodes
-		let xDif = node.x - v[0];
-		let yDif = node.y - v[1];
-		let xTr = xDif * prop;
-		let yTr = yDif * prop;
-		debugger
-		node.attr("transform", node => `translate(${xTr}, ${yTr})`);
-		textLabel.attr("transform", node => `translate(${xDif * prop}, ${yDif * prop})`);
+		// debugger
+		node.attr("transform", d => {
+			let xDif = d.x - v[0];
+			let yDif = d.y - v[1];
+			let xTr = xDif * prop;
+			let yTr = yDif * prop;
+			return `translate(${xTr}, ${yTr})`;
+		});
+		textLabel.attr("transform", d => {
+			let xDif = d.x - v[0];
+			let yDif = d.y - v[1];
+			let xTr = xDif * prop;
+			let yTr = yDif * prop;
+			return `translate(${xTr}, ${yTr})`;
+		});
 		//update nodes radius
-		node.attr("r", node => {
-			node.r * prop;
+		node.attr("r", d => {
+			return d.r * prop;
 		});
 	};
+	zoomTo([root.x, root.y, root.r * 2]);
 	
 	const zoom = (event, node) => {
 		const oldFocus = focus;
@@ -71,6 +83,8 @@ export default graphicMap => {
 
 		//TO DO filter/transition labels
 	};
+
+	return svg.node();
 };
 
 const pack = (dataObj) => {
