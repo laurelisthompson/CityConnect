@@ -8,13 +8,18 @@ export default graphicMap => {
 	let focus = root; //keep track of which circle the chart is focused on
 	let view;
 
+	// find color depending on node 
+		//background color is rbg(165, 203, 242)
+		//if depth is 1, continent, return rgb(93, 161, 224)
+		//if depth is 2, country, return rgb(14, 109, 204)
+		//if depth is 3, experience, return rgb(247, 247, 247)
+
 	let svg = d3.create("svg");
-	svg = svg.attr("viewBox", [0, 0, 900, 900]);
+	svg = svg.attr("viewBox", [-450, -400, 900, 900]);
 	svg = svg.on("click", (event) => zoom(event, root));
-	//add additional styling
 	svg.style("display", "block");
 	svg.style("margin", "0 -16px");
-	svg.style("background-color", "blue")
+	svg.style("background-color", "rgb(165, 203, 242)");
 
 	let node = svg.append("g");
 	node = node.selectAll("circle");
@@ -26,8 +31,13 @@ export default graphicMap => {
 			event.stopPropogation();
 		};
 	});
-	node.attr("fill", "white")
-	//add additional styling to nodes
+	node.attr("fill", nd => {
+		// debugger
+		if (!nd.children) return "white";
+		else if (nd.depth === 1) return "rgb(93, 161, 224)";
+		else return "rgb(14, 109, 204)";
+	})
+	//additional styling to nodes
 
 	let textLabel = svg.append("g");
 	textLabel = textLabel.selectAll("text");
@@ -45,24 +55,24 @@ export default graphicMap => {
 		view = v; 
 		
 		//transform/translate labels and nodes
-		// debugger
-		node.attr("transform", d => {
-			let xDif = d.x - v[0];
-			let yDif = d.y - v[1];
+		//debugger
+		node.attr("transform", nd => {
+			let xDif = nd.x - v[0];
+			let yDif = nd.y - v[1];
 			let xTr = xDif * prop;
 			let yTr = yDif * prop;
 			return `translate(${xTr}, ${yTr})`;
 		});
-		textLabel.attr("transform", d => {
-			let xDif = d.x - v[0];
-			let yDif = d.y - v[1];
+		textLabel.attr("transform", nd => {
+			let xDif = nd.x - v[0];
+			let yDif = nd.y - v[1];
 			let xTr = xDif * prop;
 			let yTr = yDif * prop;
 			return `translate(${xTr}, ${yTr})`;
 		});
 		//update nodes radius
-		node.attr("r", d => {
-			return d.r * prop;
+		node.attr("r", nd => {
+			return nd.r * prop;
 		});
 	};
 	zoomTo([root.x, root.y, root.r * 2]);
