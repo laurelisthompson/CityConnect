@@ -1,14 +1,40 @@
 export const northAmerica = [
     {
+        name: "Belize",
+        children: [
+            {
+                name: "exp 1",
+                value: 300
+            },
+            {
+                name: "exp 2",
+                value: 300
+            },
+        ]
+    },
+    {
         name: "Canada",
         children: [
             {
                 name: "exp 1",
-                value: 1500
+                value: 300
             },
             {
                 name: "exp 2",
-                value: 1500
+                value: 300
+            },
+        ]
+    },
+    {
+        name: "Costa Rica",
+        children: [
+            {
+                name: "exp 1",
+                value: 300
+            },
+            {
+                name: "exp 2",
+                value: 300
             },
         ]
     },
@@ -17,15 +43,15 @@ export const northAmerica = [
         children: [
             {
                 name: "exp 1",
-                value: 1500
+                value: 300
             },
             {
                 name: "exp 2",
-                value: 1500
+                value: 300
             },
             {
                 name: "exp 3",
-                value: 1500
+                value: 300
             },
         ]
     },
@@ -34,23 +60,61 @@ export const northAmerica = [
         children: [
             {
                 name: "exp 1",
-                value: 1500
+                value: 300
             },
             {
                 name: "exp 2",
-                value: 1500
+                value: 300
             },
             {
                 name: "exp 3",
-                value: 1500
+                value: 300
             },
             {
                 name: "exp 4",
-                value: 1500
+                value: 300
             },
             {
                 name: "exp 5",
-                value: 1500
+                value: 300
+            },
+        ]
+    },
+    {
+        name: "Nicaragua",
+        children: [
+            {
+                name: "exp 1",
+                value: 300
+            },
+            {
+                name: "exp 2",
+                value: 300
+            },
+        ]
+    },
+    {
+        name: "United States",
+        children: [
+            {
+                name: "exp 1",
+                value: 300
+            },
+            {
+                name: "exp 2",
+                value: 300
+            },
+            {
+                name: "exp 3",
+                value: 300
+            },
+            {
+                name: "exp 4",
+                value: 300
+            },
+            {
+                name: "exp 5",
+                value: 300
             },
         ]
     },

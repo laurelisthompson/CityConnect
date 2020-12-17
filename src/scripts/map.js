@@ -15,29 +15,36 @@ export default graphicMap => {
 		//if depth is 3, experience, return rgb(247, 247, 247)
 
 	let svg = d3.create("svg");
-	svg = svg.attr("viewBox", [-450, -400, 900, 900]);
+	svg = svg.attr("viewBox", [-500, -500, 1000, 1000]);
 	svg = svg.on("click", (event) => zoom(event, root));
 	svg.style("display", "block");
 	svg.style("margin", "0 -16px");
 	svg.style("background-color", "rgb(165, 203, 242)");
 
+
+
 	let node = svg.append("g");
 	node = node.selectAll("circle");
 	node = node.data(root.descendants().slice(1)); //get all node children, exclude itself
 	node = node.join("circle");
-	node = node.on("click", (event, node) => {
-		if (focus !== node) {
-			zoom(event, node);
+	node.on("click", (event, nd) => {
+		if (focus !== nd) {
+			zoom(event, nd);
 			event.stopPropogation();
 		};
 	});
 	node.attr("fill", nd => {
-		// debugger
 		if (!nd.children) return "white";
 		else if (nd.depth === 1) return "rgb(93, 161, 224)";
 		else return "rgb(14, 109, 204)";
-	})
-	//additional styling to nodes
+	});
+	node.style("cursor", "pointer");
+	node.on("mouseover", function() { 
+		d3.select(this).attr("stroke", "rgb(224, 93, 161)"); 
+	});
+	node.on("mouseout", function() { 
+		d3.select(this).attr("stroke", null); 
+	});
 
 	let textLabel = svg.append("g");
 	textLabel = textLabel.selectAll("text");
@@ -77,14 +84,14 @@ export default graphicMap => {
 	};
 	zoomTo([root.x, root.y, root.r * 2]);
 	
-	const zoom = (event, node) => {
+	const zoom = (event, nd) => {
 		const oldFocus = focus;
-		focus = node;
+		focus = nd;
 
 		//create zoom transition constant, set duration and call tween
 		const zoomTransition = svg.transition();
 		zoomTransition.duration(750);
-		zoomTransition.tween("zoom", node => {
+		zoomTransition.tween("zoom", nd => {
 			//create interpolator for the two views
 			//t is the % of duration that has elapsed since the click
 			const interpolator = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2]);
