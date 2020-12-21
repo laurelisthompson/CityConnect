@@ -14,7 +14,7 @@ body {
         margin-bottom: 20px;
     }
 
-    button {
+    button.nav-links {
         font-family: 'Montserrat';
         background-color:rgb(165, 203, 242);
         border: 1px solid rgb(93, 161, 224);
@@ -25,14 +25,15 @@ body {
         margin-right: 5px;
     }
 
-    button:hover {
+    button.nav-links:hover {
         border: 1px solid rgb(224, 93, 161);
         color: rgb(224, 93, 161);
     }
 
-    button:focus {
+    button.nav-links:focus {
         background-color: rgb(224, 93, 161);
         color: rgb(247, 247, 247);
+        outline: none;
     }
 }
 

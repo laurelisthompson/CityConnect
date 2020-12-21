@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./dist/main.css" />
     <title>Expeditions</title>
 </head>
@@ -12,10 +13,34 @@
 <body>
     <h1>Expeditions</h1>
     <div id="navbar">
-        <button>About</button>
-        <a href="https://github.com/laurelisthompson/Expeditions" target="_blank"><button>GitHub</button></a>
-        <a href="https://www.linkedin.com/in/laurelisthompson/" target="_blank"><button>LinkedIn</button></a>
-        <a href="https://laurelisthompson.github.io" target="_blank"><button>Portfolio</button></a>
+        <button id="open-modal"  class="nav-links">About</button>
+        <div id="modal-container">
+            <div class="modal">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare, nisl et efficitur auctor, justo urna bibendum
+                    augue, quis blandit dolor neque sed odio. Sed sit amet vulputate nibh, vel vestibulum risus. Phasellus pellentesque
+                    libero eu neque gravida, ut convallis augue condimentum. Praesent ut quam at odio dictum ultricies. Etiam pellentesque
+                    placerat tristique. Suspendisse ac enim ut urna malesuada tristique. Morbi venenatis venenatis nibh sed tristique. Nam
+                    quis ex pellentesque felis fringilla gravida a at ipsum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare, nisl et efficitur auctor, justo urna bibendum
+                    augue, quis blandit dolor neque sed odio. Sed sit amet vulputate nibh, vel vestibulum risus. Phasellus pellentesque
+                    libero eu neque gravida, ut convallis augue condimentum. Praesent ut quam at odio dictum ultricies. Etiam pellentesque
+                    placerat tristique. Suspendisse ac enim ut urna malesuada tristique. Morbi venenatis venenatis nibh sed tristique. Nam
+                    quis ex pellentesque felis fringilla gravida a at ipsum.
+                </p>
+                <div>
+                    <a href="https://github.com/laurelisthompson/Expeditions" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+                <span id="close-modal">CLOSE</span>
+            </div>
+        </div>
+
+        <a href="https://github.com/laurelisthompson/Expeditions" target="_blank"><button class="nav-links">GitHub</button></a>
+        <a href="https://www.linkedin.com/in/laurelisthompson/" target="_blank"><button class="nav-links">LinkedIn</button></a>
+        <a href="https://angel.co/u/laurelisthompson" target="_blank"><button class="nav-links">AngelList</button></a>
+        <a href="https://laurelisthompson.github.io" target="_blank"><button class="nav-links">Portfolio</button></a>
     </div>
 
     <script src="./dist/main.js"></script>

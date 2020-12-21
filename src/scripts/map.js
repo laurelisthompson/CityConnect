@@ -21,15 +21,13 @@ export default graphicMap => {
 	svg.style("margin", "0 -16px");
 	svg.style("background-color", "rgb(165, 203, 242)");
 
-
-
 	let node = svg.append("g");
 	node = node.selectAll("circle");
 	node = node.data(root.descendants().slice(1)); //get all node children, exclude itself
 	node = node.join("circle");
-	node.on("click", (event, nd) => {
-		if (focus !== nd) {
-			zoom(event, nd);
+	node.on("click", (event, node) => {
+		if (focus !== node) {
+			zoom(event, node);
 			event.stopPropogation();
 		};
 	});
@@ -40,7 +38,8 @@ export default graphicMap => {
 	});
 	node.style("cursor", "pointer");
 	node.on("mouseover", function() { 
-		d3.select(this).attr("stroke", "rgb(224, 93, 161)"); 
+		d3.select(this).attr("stroke", "rgb(224, 93, 161)");
+		d3.select(this).attr("stroke-width", "3px"); 
 	});
 	node.on("mouseout", function() { 
 		d3.select(this).attr("stroke", null); 
@@ -89,9 +88,9 @@ export default graphicMap => {
 		focus = nd;
 
 		//create zoom transition constant, set duration and call tween
-		const zoomTransition = svg.transition();
-		zoomTransition.duration(750);
-		zoomTransition.tween("zoom", nd => {
+		let zoomTransition = svg.transition();
+		zoomTransition = zoomTransition.duration(750);
+		zoomTransition = zoomTransition.tween("zoom", nd => {
 			//create interpolator for the two views
 			//t is the % of duration that has elapsed since the click
 			const interpolator = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2]);

@@ -1,0 +1,76 @@
+#modal-container {
+    display: none; 
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    background-color: rgb(14, 109, 204);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+    top: 34%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+    padding: 10px 40px;
+    border-radius: 3px;
+    animation-name: modalFade;
+    animation-duration: .7s;
+    font-family: 'Montserrat';
+
+    p {
+        font-style: normal;
+        text-align: justify;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: rgb(247, 247, 247);
+    }
+
+    span {
+        font-style: normal;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgb(247, 247, 247);
+        align-self: center;
+    }
+
+    span:hover {
+        color: rgb(224, 93, 161);
+        cursor: pointer;
+    }
+
+    button {
+        margin-top: 10px;
+        background-color: rgb(14, 109, 204);
+        color: white;
+        outline: none;
+    }
+
+    button:hover {
+        color: rgb(224, 93, 161);
+    }
+}
+
+@keyframes modalFade {
+    //start of animation
+    from {
+        top: 34%;
+        opacity: 0;
+    }
+
+    //end of animation
+    to {
+        top: 34%;
+        opacity: 1;
+    }
+}
