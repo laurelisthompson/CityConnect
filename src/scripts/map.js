@@ -15,19 +15,20 @@ export default graphicMap => {
 		//if depth is 3, experience, return rgb(247, 247, 247)
 
 	let svg = d3.create("svg");
-	svg = svg.attr("viewBox", [-500, -500, 1000, 1000]);
+	svg = svg.attr("viewBox", [-500, -375, 1000, 800]);
 	svg = svg.on("click", (event) => zoom(event, root));
 	svg.style("display", "block");
-	svg.style("margin", "0 -16px");
+	svg.style("margin", "5px 10px");
 	svg.style("background-color", "rgb(165, 203, 242)");
+	// svg.style("background-color", "red");
 
 	let node = svg.append("g");
 	node = node.selectAll("circle");
 	node = node.data(root.descendants().slice(1)); //get all node children, exclude itself
 	node = node.join("circle");
-	node.on("click", (event, node) => {
-		if (focus !== node) {
-			zoom(event, node);
+	node.on("click", (event, nd) => {
+		if (focus !== nd) {
+			zoom(event, nd);
 			event.stopPropogation();
 		};
 	});
@@ -103,11 +104,15 @@ export default graphicMap => {
 	return svg.node();
 };
 
+//width and height of svg
+const width = 800;
+const height = 800;
+
 const pack = (dataObj) => {
 	//creates new pack layout and sets size and padding values
 	const packInstance = d3.pack();
 	packInstance.size([width, height]);
-	packInstance.padding(5);
+	packInstance.padding(3);
 
 	//create root node by passing into d3 hierarchy, calculating value and sorting by nodes values
 	const rootNode = d3.hierarchy(dataObj); 
@@ -116,7 +121,3 @@ const pack = (dataObj) => {
 
 	return packInstance(rootNode);
 };
-
-//width and height of svg
-const width = 900;
-const height = 900;
