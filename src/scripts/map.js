@@ -17,7 +17,7 @@ export default graphicMap => {
 	let svg = d3.create("svg");
 	svg = svg.attr("viewBox", [`-${width/2} -${height/2} ${width} ${height}`]);
 	svg = svg.style("display", "block");
-	svg = svg.style("margin", "5px 10px");
+	svg = svg.style("margin", "20px 10px");
 	svg = svg.style("background-color", "rgb(165, 203, 242)");
 	// svg = svg.style("background-color", "red");
 	svg = svg.on("click", (event) => zoom(event, root));
@@ -116,8 +116,8 @@ export default graphicMap => {
 };
 
 //width and height of svg
-const width = 3500;
-const height = 3000;
+const width = 1000;
+const height = 500;
 
 const pack = (dataObj) => {
 	//creates new pack layout and sets size and padding values
