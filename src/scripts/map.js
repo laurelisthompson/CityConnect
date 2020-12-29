@@ -99,7 +99,7 @@ export default graphicMap => {
 		// debugger
 		//create zoom transition constant, set duration and call tween
 		let zoomTransition = svg.transition();
-		zoomTransition.duration(750);
+		zoomTransition.duration(850);
 		zoomTransition.tween("zoom", zooming.apply(focus));
 		// zoomTransition.tween("zoom", focus => {
 		// 	//create interpolator for the two views
