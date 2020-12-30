@@ -21,7 +21,7 @@
     left: 50%;
     width: 500px;
     height: 400px;
-    padding: 10px 40px;
+    padding: 20px 40px;
     border-radius: 3px;
     animation-name: modalFade;
     animation-duration: .7s;
@@ -30,7 +30,6 @@
     p {
         font-style: normal;
         text-align: justify;
-        margin-bottom: 10px;
         font-size: 14px;
         color: rgb(247, 247, 247);
     }
@@ -38,6 +37,7 @@
     span {
         font-style: normal;
         margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 16px;
         font-weight: 600;
         color: rgb(247, 247, 247);
@@ -57,6 +57,16 @@
     }
 
     button:hover {
+        color: rgb(224, 93, 161);
+    }
+
+    a {
+        color: white;
+        outline: none;
+        margin: 5px 5px;
+    }
+
+    a:hover {
         color: rgb(224, 93, 161);
     }
 }
