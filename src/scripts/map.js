@@ -123,7 +123,7 @@ const pack = (dataObj) => {
 	//creates new pack layout and sets size and padding values
 	const packInstance = d3.pack();
 	packInstance.size([width, height]);
-	packInstance.padding(3);
+	packInstance.padding(1);
 
 	//create root node by passing into d3 hierarchy, calculating value and sorting by nodes values
 	const rootNode = d3.hierarchy(dataObj); 
