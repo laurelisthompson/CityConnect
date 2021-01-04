@@ -60,11 +60,9 @@ export default graphicMap => {
 	const zoomTo = () => { //takes in a view 
 		//find proportion of the width to the diameter
 		const prop = width / focus.y;
-		// debugger
 		view = [focus.x, focus.y, focus.r * 2]; 
 		
-		//transform/translate labels and nodes
-		//debugger
+		//transform/translate labels and node
 		node.attr("transform", nd => {
 			let xDif = nd.x - view[0];
 			let yDif = nd.y - view[1];
@@ -91,12 +89,10 @@ export default graphicMap => {
 		focus = nd;
 
 		const zooming = function(){
-			// debugger
 			const interpolator = d3.interpolateZoom(view, [this.x, this.y, this.r * 2]);
 			return t => zoomTo(interpolator(t));
 		};
 
-		// debugger
 		//create zoom transition constant, set duration and call tween
 		let zoomTransition = svg.transition();
 		zoomTransition.duration(850);
@@ -104,7 +100,6 @@ export default graphicMap => {
 		// zoomTransition.tween("zoom", focus => {
 		// 	//create interpolator for the two views
 		// 	//t is the % of duration that has elapsed since the click
-		// 	debugger
 		// 	const interpolator = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2]);
 		// 	return t => zoomTo(interpolator(t));
 		// });
