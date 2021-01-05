@@ -9,7 +9,7 @@ Expeditions will be a single-page app that features a circle packing map filtere
 With Expeditions, users will be able to:
 
 1. See a circle packing map of experiences to explore
-2. Click on locations to view a modal with information and travel advice
+2. Interact with the circle packing graph through clicking on circles
 3. Outline locations they are interested in exploring further on the circle map
 4. Change the map color based on experiences they like to see a circle packing map of their interests 
 
