@@ -59,7 +59,7 @@ export default graphicMap => {
 	// let v = [focus.x, focus.y, focus.r * 2];
 	const zoomTo = () => { //takes in a view 
 		//find proportion of the width to the diameter
-		const prop = width / focus.y;
+		const prop = height / focus.y;
 		view = [focus.x, focus.y, focus.r * 2]; 
 		
 		//transform/translate labels and node
