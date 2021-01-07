@@ -56,6 +56,7 @@ export default graphicMap => {
 	//add additional styling to labels
 
 	//define functions
+
 	// let v = [focus.x, focus.y, focus.r * 2];
 	const zoomTo = () => { //takes in a view 
 		//find proportion of the width to the diameter
@@ -82,7 +83,7 @@ export default graphicMap => {
 				return nd.r * prop;
 			});
 		};
-	zoomTo([focus.x, focus.y, focus.r * 2]);
+	zoomTo([root.x, root.y, root.r * 2]);
 	
 	const zoom = (event, nd) => {
 		const oldFocus = focus;
@@ -107,7 +108,7 @@ export default graphicMap => {
 };
 
 //width and height of svg
-const width = 500;
+const width = 1000;
 const height = width / 2.25;
 
 const pack = (dataObj) => {
