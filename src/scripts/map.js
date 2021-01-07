@@ -34,7 +34,7 @@ export default graphicMap => {
 	node = node.style("cursor", "pointer");
 	node = node.on("mouseover", function() { 
 		d3.select(this).attr("stroke", "rgb(224, 93, 161)");
-		d3.select(this).attr("stroke-width", "3px"); 
+		d3.select(this).attr("stroke-width", "1px"); 
 	});
 	node = node.on("mouseout", function() { 
 		d3.select(this).attr("stroke", null); 
@@ -89,6 +89,8 @@ export default graphicMap => {
 		focus = nd;
 
 		const zooming = function(){
+			//create interpolator for the two views
+			//t is the % of duration that has elapsed since the click
 			const interpolator = d3.interpolateZoom(view, [this.x, this.y, this.r * 2]);
 			return t => zoomTo(interpolator(t));
 		};
@@ -97,12 +99,6 @@ export default graphicMap => {
 		let zoomTransition = svg.transition();
 		zoomTransition.duration(850);
 		zoomTransition.tween("zoom", zooming.apply(focus));
-		// zoomTransition.tween("zoom", focus => {
-		// 	//create interpolator for the two views
-		// 	//t is the % of duration that has elapsed since the click
-		// 	const interpolator = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2]);
-		// 	return t => zoomTo(interpolator(t));
-		// });
 
 		//TO DO filter/transition labels
 	};
@@ -111,8 +107,8 @@ export default graphicMap => {
 };
 
 //width and height of svg
-const width = 1000;
-const height = 500;
+const width = 500;
+const height = width / 2.25;
 
 const pack = (dataObj) => {
 	//creates new pack layout and sets size and padding values
