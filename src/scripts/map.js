@@ -79,10 +79,11 @@ export default graphicMap => {
 			// 	return `translate(${xTr}, ${yTr})`;
 			// });
 			//update nodes radius
-			node.attr("r", nd => {
-				return nd.r * prop;
-			});
-		};
+		node.attr("r", nd => {
+			return nd.r * prop;
+		});
+	};
+	
 	zoomTo([root.x, root.y, root.r * 2]);
 	
 	const zoom = (event, nd) => {
@@ -109,7 +110,7 @@ export default graphicMap => {
 
 //width and height of svg
 const width = 1000;
-const height = width / 2.25;
+const height = 450;
 
 const pack = (dataObj) => {
 	//creates new pack layout and sets size and padding values
