@@ -6,7 +6,7 @@ export default graphicMap => {
 	//define constants
 	const root = pack(dataObj);
 	let focus = root; //keep track of which circle the chart is focused on
-	let view;
+	let currentView;
 
 	// find color depending on node 
 		//background color is rbg(165, 203, 242)
@@ -59,14 +59,14 @@ export default graphicMap => {
 
 	// let v = [focus.x, focus.y, focus.r * 2];
 	const zoomTo = () => { //takes in a view 
-		//find proportion of the width to the diameter
+		//find proportion of the height to the diameter
 		const prop = height / focus.y;
-		view = [focus.x, focus.y, focus.r * 2]; 
+		currentView = [focus.x, focus.y, focus.r * 2]; 
 		
 		//transform/translate labels and node
 		node.attr("transform", nd => {
-			let xDif = nd.x - view[0];
-			let yDif = nd.y - view[1];
+			let xDif = nd.x - currentView[0];
+			let yDif = nd.y - currentView[1];
 			let xTr = xDif * prop;
 			let yTr = yDif * prop;
 			return `translate(${xTr}, ${yTr})`;
@@ -93,7 +93,7 @@ export default graphicMap => {
 		const zooming = function(){
 			//create interpolator for the two views
 			//t is the % of duration that has elapsed since the click
-			const interpolator = d3.interpolateZoom(view, [this.x, this.y, this.r * 2]);
+			const interpolator = d3.interpolateZoom(currentView, [this.x, this.y, this.r * 2]);
 			return t => zoomTo(interpolator(t));
 		};
 
@@ -102,7 +102,7 @@ export default graphicMap => {
 		zoomTransition.duration(850);
 		zoomTransition.tween("zoom", zooming.apply(focus));
 
-		//TO DO filter/transition labels
+		//TO DO filter/transition labels 
 	};
 
 	return svg.node();
