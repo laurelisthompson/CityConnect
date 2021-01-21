@@ -16,10 +16,11 @@ export default graphicMap => {
 
 	let svg = d3.create("svg");
 	svg = svg.attr("viewBox", [`-${width/2} -${height/2} ${width} ${height}`]);
-	svg = svg.style("display", "block");
-	svg = svg.style("margin", "20px 10px");
+	svg = svg.attr("class", "svg-content");
+	// svg = svg.style("display", "block");
+	// svg = svg.style("margin", "20px 10px");
 	// svg = svg.style("background-color", "rgb(165, 203, 242)");
-	svg = svg.style("background-color", "rgb(0, 0, 0)");
+	// svg = svg.style("background-color", "rgb(0, 0, 0)");
 	// svg = svg.style("background-color", "red");
 	svg = svg.on("click", (event) => zoom(event, root));
 
@@ -123,7 +124,7 @@ const pack = (dataObj) => {
 	//creates new pack layout and sets size and padding values
 	const packInstance = d3.pack();
 	packInstance.size([width, height]);
-	packInstance.padding(1);
+	packInstance.padding(5);
 
 	//create root node by passing into d3 hierarchy, calculating value and sorting by nodes values
 	const rootNode = d3.hierarchy(dataObj); 

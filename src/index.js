@@ -3,7 +3,7 @@ import graphicMap from './scripts/map';
 
 window.addEventListener("DOMContentLoaded", () => {
     //display d3 mapping
-    let mapping = document.querySelector("body").appendChild(graphicMap());
+    let mapping = document.querySelector("#d3map").appendChild(graphicMap());
 
     //open and close modal when about is clicked
     let openModal = document.getElementById('open-modal');
