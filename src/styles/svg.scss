@@ -1,13 +1,10 @@
 #d3map {
-  svg {
-    background-color: red;
-    height: 700px;
-  }
+    display: flex;
+    justify-content: center;
 
-  .svg-content {
-    display: inline-block;
-    position: relative;
-    vertical-align: middle; 
-    overflow: hidden;
-  }
+    svg {
+        background-color: red;
+        height: 700px;
+        width: 100%;
+    }
 }
