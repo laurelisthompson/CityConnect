@@ -18,7 +18,8 @@ export default graphicMap => {
 	svg = svg.attr("viewBox", [`-${width/2} -${height/2} ${width} ${height}`]);
 	svg = svg.style("display", "block");
 	svg = svg.style("margin", "20px 10px");
-	svg = svg.style("background-color", "rgb(165, 203, 242)");
+	// svg = svg.style("background-color", "rgb(165, 203, 242)");
+	svg = svg.style("background-color", "rgb(0, 0, 0)");
 	// svg = svg.style("background-color", "red");
 	svg = svg.on("click", (event) => zoom(event, root));
 
@@ -58,10 +59,10 @@ export default graphicMap => {
 	//define functions
 
 	// let v = [focus.x, focus.y, focus.r * 2];
-	const zoomTo = () => { //takes in a view 
+	const zoomTo = (v) => { //takes in a view 
 		//find proportion of the height to the diameter
-		const prop = height / focus.y;
-		currentView = [focus.x, focus.y, focus.r * 2]; 
+		const prop = width / v[2];
+		currentView = v; 
 		
 		//transform/translate labels and node
 		node.attr("transform", nd => {
@@ -69,6 +70,8 @@ export default graphicMap => {
 			let yDif = nd.y - currentView[1];
 			let xTr = xDif * prop;
 			let yTr = yDif * prop;
+			// if (!xTr) debugger;
+			// console.log(xTr);
 			return `translate(${xTr}, ${yTr})`;
 		});
 		// textLabel.attr("transform", nd => {
@@ -90,17 +93,21 @@ export default graphicMap => {
 		const oldFocus = focus;
 		focus = nd;
 
-		const zooming = function(){
-			//create interpolator for the two views
-			//t is the % of duration that has elapsed since the click
-			const interpolator = d3.interpolateZoom(currentView, [this.x, this.y, this.r * 2]);
-			return t => zoomTo(interpolator(t));
-		};
+		// const zooming = function(){
+		// 	//create interpolator for the two views
+		// 	//t is the % of duration that has elapsed since the click
+		// 	const interpolator = d3.interpolateZoom(currentView, [this.x, this.y, this.r * 2]);
+		// 	return t => zoomTo(interpolator(t));
+		// };
 
 		//create zoom transition constant, set duration and call tween
 		let zoomTransition = svg.transition();
-		zoomTransition.duration(850);
-		zoomTransition.tween("zoom", zooming.apply(focus));
+		zoomTransition = zoomTransition.duration(700);
+		// zoomTransition.tween("zoom", zooming.apply(focus));
+		zoomTransition = zoomTransition.tween("zoom", nd => {
+			const interpolator = d3.interpolateZoom(currentView, [focus.x, focus.y, focus.r * 2]);
+			return t => zoomTo(interpolator(t));
+		});
 
 		//TO DO filter/transition labels 
 	};
@@ -109,8 +116,8 @@ export default graphicMap => {
 };
 
 //width and height of svg
-const width = 1000;
-const height = 450;
+const width = 800;
+const height = 800;
 
 const pack = (dataObj) => {
 	//creates new pack layout and sets size and padding values
