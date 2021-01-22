@@ -15,7 +15,7 @@ export default graphicMap => {
 		//if depth is 3, experience, return rgb(247, 247, 247)
 
 	let svg = d3.create("svg");
-	svg = svg.attr("viewBox", [`-325 -325 650 650`]);
+	svg = svg.attr("viewBox", [`-360 -325 650 650`]);
 	// svg = svg.attr("viewBox", [`-${width/2} -${height/2} ${width} ${height}`]);
 	svg = svg.attr("class", "svg-content");
 	// svg = svg.style("display", "block");
