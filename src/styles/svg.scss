@@ -1,13 +1,21 @@
 #d3map {
     display: flex;
     justify-content: center;
+    vertical-align: center;
 
-    svg {
+    .svg-content {
         // background-color: red;
         width: 100%;
-        height:  700px;
+        // height: auto;
+        height:  710px;
         margin-top: 15px;
         margin-bottom: 15px;
         overflow: hidden;
+
+    }
+    
+    g {
+        vertical-align: center;
+        justify-content: center;
     }
 }

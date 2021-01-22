@@ -15,7 +15,8 @@ export default graphicMap => {
 		//if depth is 3, experience, return rgb(247, 247, 247)
 
 	let svg = d3.create("svg");
-	svg = svg.attr("viewBox", [`-${width/2} -${height/2} ${width} ${height}`]);
+	svg = svg.attr("viewBox", [`-325 -325 650 650`]);
+	// svg = svg.attr("viewBox", [`-${width/2} -${height/2} ${width} ${height}`]);
 	svg = svg.attr("class", "svg-content");
 	// svg = svg.style("display", "block");
 	// svg = svg.style("margin", "20px 10px");
@@ -62,7 +63,7 @@ export default graphicMap => {
 	// let v = [focus.x, focus.y, focus.r * 2];
 	const zoomTo = (v) => { //takes in a view 
 		//find proportion of the height to the diameter
-		const prop = width / v[2];
+		const prop = 650 / v[2];
 		currentView = v; 
 		
 		//transform/translate labels and node
@@ -124,7 +125,7 @@ const pack = (dataObj) => {
 	//creates new pack layout and sets size and padding values
 	const packInstance = d3.pack();
 	packInstance.size([width, height]);
-	packInstance.padding(5);
+	packInstance.padding(3);
 
 	//create root node by passing into d3 hierarchy, calculating value and sorting by nodes values
 	const rootNode = d3.hierarchy(dataObj); 
