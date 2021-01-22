@@ -15,7 +15,7 @@ export default graphicMap => {
 		//if depth is 3, experience, return rgb(247, 247, 247)
 
 	let svg = d3.create("svg");
-	svg = svg.attr("viewBox", [`-360 -325 650 650`]);
+	svg = svg.attr("viewBox", [`-315 -325 650 650`]);
 	// svg = svg.attr("viewBox", [`-${width/2} -${height/2} ${width} ${height}`]);
 	svg = svg.attr("class", "svg-content");
 	// svg = svg.style("display", "block");
@@ -37,7 +37,7 @@ export default graphicMap => {
 	node = node.style("cursor", "pointer");
 	node = node.on("mouseover", function() { 
 		d3.select(this).attr("stroke", "rgb(224, 93, 161)");
-		d3.select(this).attr("stroke-width", "1px"); 
+		d3.select(this).attr("stroke-width", "1.5px"); 
 	});
 	node = node.on("mouseout", function() { 
 		d3.select(this).attr("stroke", null); 
@@ -130,7 +130,7 @@ const pack = (dataObj) => {
 	//create root node by passing into d3 hierarchy, calculating value and sorting by nodes values
 	const rootNode = d3.hierarchy(dataObj); 
 	rootNode.sum(node => node.value);
-	rootNode.sort((a, b) => a.value - b.value);
+	rootNode.sort((a, b) => b.value - a.value);
 
 	return packInstance(rootNode);
 };
