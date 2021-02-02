@@ -56,8 +56,8 @@ export default graphicMap => {
 	textLabel = textLabel.attr("class", "mapping-text");
 	textLabel = textLabel.text(node => node.data.name);
 	textLabel = textLabel.style("display", node => node.parent === root ? "inline" : "none");
-	textLabel = textLabel.style("fill", node => node.parent === focus ? "rgb(224, 93, 161)" : null);
-	textLabel = textLabel.style("font", "12px sans-serif");
+	textLabel = textLabel.style("fill", node => node.parent === root ? "rgb(224, 93, 161)" : null);
+	textLabel = textLabel.style("font", "16px sans-serif");
 	textLabel = textLabel.style("font-family", "Montserrat");
 	textLabel = textLabel.style("background-color", "white");
 
@@ -79,6 +79,7 @@ export default graphicMap => {
 			// console.log(xTr);
 			return `translate(${xTr}, ${yTr})`;
 		});
+
 		textLabel.attr("transform", nd => {
 				let xDif = nd.x - currentView[0];
 				let yDif = nd.y - currentView[1];
@@ -88,6 +89,7 @@ export default graphicMap => {
 			})
 		.style("fill", node => node.parent === focus ? "rgb(224, 93, 161)" : null)
 		.attr("text-anchor", "middle");
+
 		node.attr("r", nd => {
 			return nd.r * prop;
 		});
