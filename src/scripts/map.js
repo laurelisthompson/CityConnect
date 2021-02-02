@@ -49,16 +49,21 @@ export default graphicMap => {
 		};
 	});
 
-	// let textLabel = svg.append("g");
-	// textLabel = textLabel.selectAll("text");
-	// textLabel = textLabel.data(root.descendants());
-	// textLabel = textLabel.join("text");
-	// textLabel = textLabel.style("fill-opacity", node => {
-	// 	node.parent === root ? 1 : 0
-	// });
-	//add additional styling to labels
+	let textLabel = svg.append("g");
+	textLabel = textLabel.selectAll("text");
+	// textLabel = textLabel.style("font", "10px sans-serif");
+	// textLabel = textLabel.attr("text-anchor", "middle");
+	// textLabel = textLabel.attr("alignment-baseline", "middle");
+	textLabel = textLabel.data(root.descendants());
+	textLabel = textLabel.join("text");
+	textLabel = textLabel.attr("class", "mapping-text");
+	// textLabel = textLabel.style("fill-opacity", node => node.parent === root ? 1 : 0);
+	textLabel = textLabel.style("fill", node => node.parent === root ? "rgb(224, 93, 161)" : null);
+	textLabel = textLabel.text(node => node.data.name);
+	textLabel = textLabel.style("display", node => node.parent === root ? "inline" : "none");
+	//additional styling to labels
 
-	//define functions
+	//next define functions
 
 	// let v = [focus.x, focus.y, focus.r * 2];
 	const zoomTo = (v) => { //takes in a view 
@@ -76,13 +81,13 @@ export default graphicMap => {
 			// console.log(xTr);
 			return `translate(${xTr}, ${yTr})`;
 		});
-		// textLabel.attr("transform", nd => {
-			// 	let xDif = nd.x - v[0];
-			// 	let yDif = nd.y - v[1];
-			// 	let xTr = xDif * prop;
-			// 	let yTr = yDif * prop;
-			// 	return `translate(${xTr}, ${yTr})`;
-			// });
+		textLabel.attr("transform", nd => {
+				let xDif = nd.x - currentView[0];
+				let yDif = nd.y - currentView[1];
+				let xTr = xDif * prop;
+				let yTr = yDif * prop;
+				return `translate(${xTr}, ${yTr})`;
+			});
 			//update nodes radius
 		node.attr("r", nd => {
 			return nd.r * prop;
@@ -112,6 +117,15 @@ export default graphicMap => {
 		});
 
 		//TO DO filter/transition labels 
+		textLabel.filter(function (node) { return node.parent === focus || this.style.display === "inline"; })
+		.transition(zoomTransition)
+		.style("fill-opacity", node => node.parent === focus ? 1 : 0)
+		.on("start", function (node) { 
+			if (node.parent === focus) this.style.display = "inline"; 
+		})
+		.on("end", function (node) { 
+			if (node.parent !== focus) this.style.display = "none"; 
+		});
 	};
 
 	return svg.node();
