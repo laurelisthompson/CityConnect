@@ -51,17 +51,15 @@ export default graphicMap => {
 
 	let textLabel = svg.append("g");
 	textLabel = textLabel.selectAll("text");
-	// textLabel = textLabel.style("font", "10px sans-serif");
-	// textLabel = textLabel.attr("text-anchor", "middle");
-	// textLabel = textLabel.attr("alignment-baseline", "middle");
 	textLabel = textLabel.data(root.descendants());
 	textLabel = textLabel.join("text");
 	textLabel = textLabel.attr("class", "mapping-text");
-	// textLabel = textLabel.style("fill-opacity", node => node.parent === root ? 1 : 0);
-	textLabel = textLabel.style("fill", node => node.parent === root ? "rgb(224, 93, 161)" : null);
 	textLabel = textLabel.text(node => node.data.name);
 	textLabel = textLabel.style("display", node => node.parent === root ? "inline" : "none");
-	//additional styling to labels
+	textLabel = textLabel.style("fill", node => node.parent === focus ? "rgb(224, 93, 161)" : null);
+	textLabel = textLabel.style("font", "12px sans-serif");
+	textLabel = textLabel.style("font-family", "Montserrat");
+	textLabel = textLabel.style("background-color", "white");
 
 	//next define functions
 
@@ -87,8 +85,9 @@ export default graphicMap => {
 				let xTr = xDif * prop;
 				let yTr = yDif * prop;
 				return `translate(${xTr}, ${yTr})`;
-			});
-			//update nodes radius
+			})
+		.style("fill", node => node.parent === focus ? "rgb(224, 93, 161)" : null)
+		.attr("text-anchor", "middle");
 		node.attr("r", nd => {
 			return nd.r * prop;
 		});
