@@ -56,10 +56,10 @@ export default graphicMap => {
 	textLabel = textLabel.attr("class", "mapping-text");
 	textLabel = textLabel.text(node => node.data.name);
 	textLabel = textLabel.style("display", node => node.parent === root ? "inline" : "none");
-	textLabel = textLabel.style("fill", node => node.parent === root ? "rgb(224, 93, 161)" : null);
+	// textLabel = textLabel.style("fill", node => node.parent === root ? "rgb(224, 93, 161)" : null);
 	textLabel = textLabel.style("font", "16px sans-serif");
 	textLabel = textLabel.style("font-family", "Montserrat");
-	textLabel = textLabel.style("background-color", "white");
+	// textLabel = textLabel.style("background-color", "white");
 
 	//next define functions
 
