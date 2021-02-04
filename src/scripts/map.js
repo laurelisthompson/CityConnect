@@ -48,6 +48,7 @@ export default graphicMap => {
 			event.stopPropagation();
 		};
 	});
+	
 
 	let textLabel = svg.append("g");
 	textLabel = textLabel.selectAll("text");
@@ -61,7 +62,12 @@ export default graphicMap => {
 	textLabel = textLabel.style("font-family", "Montserrat");
 	// textLabel = textLabel.style("background-color", "white");
 
-	//next define functions
+	let expBio = svg.append("g");
+	expBio = expBio.selectAll("text");
+	expBio = expBio.data(root.descendants());
+	expBio = expBio.join("text");
+	expBio = expBio.text(node => node.data.info);
+	expBio = expBio.style("display", node => node.parent === root ? "inline" : "none");
 
 	// let v = [focus.x, focus.y, focus.r * 2];
 	const zoomTo = (v) => { //takes in a view 
@@ -87,6 +93,16 @@ export default graphicMap => {
 				let yTr = yDif * prop;
 				return `translate(${xTr}, ${yTr})`;
 			})
+		.style("fill", node => node.parent === focus ? "rgb(224, 93, 161)" : null)
+		.attr("text-anchor", "middle");
+
+		expBio.attr("transform", nd => {
+			let xDif = nd.x - currentView[0];
+			let yDif = nd.y - currentView[1];
+			let xTr = xDif * prop;
+			let yTr = yDif * prop;
+			return `translate(${xTr}, ${yTr})`;
+		})
 		.style("fill", node => node.parent === focus ? "rgb(224, 93, 161)" : null)
 		.attr("text-anchor", "middle");
 
@@ -126,6 +142,16 @@ export default graphicMap => {
 		})
 		.on("end", function (node) { 
 			if (node.parent !== focus) this.style.display = "none"; 
+		});
+
+		expBio.filter(function (node) { return node === focus || this.style.display === "inline"; })
+		.transition(zoomTransition)
+		.style("fill-opacity", node => node === focus ? 1 : 0)
+		.on("start", function (node) {
+			if (node === focus) this.style.display = "inline";
+		})
+		.on("end", function (node) {
+			if (node !== focus) this.style.display = "none";
 		});
 	};
 
