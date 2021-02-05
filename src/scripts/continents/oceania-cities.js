@@ -4,12 +4,32 @@
 
 export const oceania = [
     {
-        name: "",
+        name: "Australia",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Sydney",
+                population: 4.627345,
+                ranking: 1,
+            },
+            {
+                name: "Melbourne",
+                population: 4.246375,
+                ranking: 2,
+            },
+            {
+                name: "Brisbane",
+                population: 2.189878,
+                ranking: 3,
+            },
+            {
+                name: "Perth",
+                population: 1.896548,
+                ranking: 4,
+            },
+            {
+                name: "Adelaide",
+                population: 1.225235,
+                ranking: 5,
             },
         ]
     },
