@@ -16,13 +16,7 @@ export default graphicMap => {
 
 	let svg = d3.create("svg");
 	svg = svg.attr("viewBox", [`-315 -325 650 650`]);
-	// svg = svg.attr("viewBox", [`-${width/2} -${height/2} ${width} ${height}`]);
 	svg = svg.attr("class", "svg-content");
-	// svg = svg.style("display", "block");
-	// svg = svg.style("margin", "20px 10px");
-	// svg = svg.style("background-color", "rgb(165, 203, 242)");
-	// svg = svg.style("background-color", "rgb(0, 0, 0)");
-	// svg = svg.style("background-color", "red");
 	svg = svg.on("click", (event) => zoom(event, root));
 
 	let node = svg.append("g");
@@ -68,6 +62,8 @@ export default graphicMap => {
 	expBio = expBio.join("text");
 	expBio = expBio.text(node => node.data.info);
 	expBio = expBio.style("display", node => node.parent === root ? "inline" : "none");
+	expBio = expBio.style("font", "16px sans-serif");
+	expBio = expBio.style("font-family", "Montserrat");
 
 	// let v = [focus.x, focus.y, focus.r * 2];
 	const zoomTo = (v) => { //takes in a view 

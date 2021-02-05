@@ -4,7 +4,7 @@ export const africa = [
         children: [
             {
                 name: "exp 1",
-                info: "test",
+                info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 value: 300
             },
             {
