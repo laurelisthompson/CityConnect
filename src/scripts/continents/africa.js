@@ -211,7 +211,7 @@ export const africa = [
     },
     {
         name: "Seychelles",
-        population: .98908,
+        population: .098908,
         area: 452,
     },
     {
