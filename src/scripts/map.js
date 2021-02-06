@@ -1,11 +1,9 @@
 import * as d3 from 'd3';
-import {dataObj} from './data.js';
 import {dataCities} from './data-cities.js';
 
 export default graphicMap => {
 
 	//define constants
-	// const root = pack(dataObj);
 	const root = pack(dataCities);
 	let focus = root; //keep track of which circle the chart is focused on
 	let currentView;
@@ -53,16 +51,14 @@ export default graphicMap => {
 	textLabel = textLabel.attr("class", "mapping-text");
 	textLabel = textLabel.text(node => node.data.name);
 	textLabel = textLabel.style("display", node => node.parent === root ? "inline" : "none");
-	// textLabel = textLabel.style("fill", node => node.parent === root ? "rgb(224, 93, 161)" : null);
 	textLabel = textLabel.style("font", "16px sans-serif");
 	textLabel = textLabel.style("font-family", "Montserrat");
-	// textLabel = textLabel.style("background-color", "white");
 
 	let expBio = svg.append("g");
 	expBio = expBio.selectAll("text");
 	expBio = expBio.data(root.descendants());
 	expBio = expBio.join("text");
-	expBio = expBio.text(node => node.data.info);
+	expBio = expBio.text(node => node.data.population);
 	expBio = expBio.style("display", node => node.parent === root ? "inline" : "none");
 	expBio = expBio.style("font", "16px sans-serif");
 	expBio = expBio.style("font-family", "Montserrat");
@@ -79,8 +75,6 @@ export default graphicMap => {
 			let yDif = nd.y - currentView[1];
 			let xTr = xDif * prop;
 			let yTr = yDif * prop;
-			// if (!xTr) debugger;
-			// console.log(xTr);
 			return `translate(${xTr}, ${yTr})`;
 		});
 
@@ -125,7 +119,6 @@ export default graphicMap => {
 		//create zoom transition constant, set duration and call tween
 		let zoomTransition = svg.transition();
 		zoomTransition = zoomTransition.duration(700);
-		// zoomTransition.tween("zoom", zooming.apply(focus));
 		zoomTransition = zoomTransition.tween("zoom", nd => {
 			const interpolator = d3.interpolateZoom(currentView, [focus.x, focus.y, focus.r * 2]);
 			return t => zoomTo(interpolator(t));
@@ -169,11 +162,8 @@ const pack = (dataCities) => {
 
 	//create root node by passing into d3 hierarchy, calculating value and sorting by nodes values
 	const rootNode = d3.hierarchy(dataCities); 
-	// const rootNode = d3.hierarchy(dataObj); 
 	rootNode.sum(node => node.population);
-	// rootNode.sum(node => node.value);
 	rootNode.sort((a, b) => b.population - a.population);
-	// rootNode.sort((a, b) => b.value - a.value);
 
 	return packInstance(rootNode);
 };

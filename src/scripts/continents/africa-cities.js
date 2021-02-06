@@ -8,7 +8,7 @@ export const africa = [
         children: [
             {
                 name: "Lagos",
-                population: 9.0,
+                population: 9,
                 ranking: 1,
             },
             {
