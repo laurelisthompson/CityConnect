@@ -204,149 +204,152 @@ export const africa = [
         ]
     },
     {
-        name: "",
-        // 20. Khartoum - Sudan - 1.974647
-        // 38. Omdurman - Sudan - 1.2
+        name: "Sudan",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Khartoum",
+                population: 1.974647,
+                ranking: 20,
+            },
+            {
+                name: "Omdurman",
+                population: 1.2,
+                ranking: 38,
             },
         ]
     },
     {
-        name: "",
-        // 21. Accra - Ghana - 1.963264
-        // 29. Kumasi - Ghana - 1.468609
+        name: "Ghana",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Accra",
+                population: 1.963264,
+                ranking: 21,
+            },
+            {
+                name: "Kumasi",
+                population: 1.468609,
+                ranking: 29,
             },
         ]
     },
     {
-        name: "",
-        // 22. Camayenne - Guinea - 1.871242
-        // 23. Conakry - Guinea - 1.7672
+        name: "Guinea",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Camayenne",
+                population: 1.871242,
+                ranking: 22,
+            },
+            {
+                name: "Conakry",
+                population: 1.7672,
+                ranking: 23,
             },
         ]
     },
     {
-        name: "",
-        // 28. Harara - Zimbabwe - 1.542813
+        name: "Zimbabwe",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Harare",
+                population: 1.542813,
+                ranking: 28,
             },
         ]
     },
     {
-        name: "",
-        // 30. Antananariva - Madagascar - 1.391433
+        name: "Madagascar",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Antananariva",
+                population: 1.391433,
+                ranking: 30,
             },
         ]
     },
     {
-        name: "",
-        // 32. Kampala - Uganda - 1.353189
+        name: "Uganda",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Kampala",
+                population: 1.353189,
+                ranking: 32,
             },
         ]
     },
     {
-        name: "",
-        // 33. Douala - Cameroon - 1.338082
-        // 34. Yaounde - Cameroon - 1.299369
+        name: "Cameroon",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Douala",
+                population: 1.338082,
+                ranking: 33,
+            },
+            {
+                name: "Yaounde",
+                population: 1.299369,
+                ranking: 34,
             },
         ]
     },
     {
-        name: "",
-        // 35. Bamako - Mali - 1.297281
+        name: "Mali",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Bamako",
+                population: 1.297281,
+                ranking: 35,
             },
         ]
     },
     {
-        name: "",
-        // 36. Brazzaville - Republic of the Congo - 1.284609
+        name: "Republic of the Congo",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Brazzaville",
+                population: 1.284609,
+                ranking: 36,
             },
         ]
     },
     {
-        name: "",
-        // 37. Lusaka - Zambia - 1.26744
+        name: "Zambia",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Lusaka",
+                population: 1.26744,
+                ranking: 37,
             },
         ]
     },
     {
-        name: "",
-        // 39. Maputo - Mozambique - 1.191613
+        name: "Mozambique",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Maputo",
+                population: 1.191613,
+                ranking: 39,
             },
         ]
     },
     {
-        name: "",
-        // 40. Tripoli - Libya - 1.150989
+        name: "Libya",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Tripoli",
+                population: 1.150989,
+                ranking: 40,
             },
         ]
     },
     {
-        name: "",
-        // 44. Ouagadougou - Burkina Faso - 1.086505
+        name: "Burkina Faso",
         children: [
             {
-                name: "",
-                population: 0,
-                ranking: 0,
+                name: "Ouagadougou",
+                population: 1.086505,
+                ranking: 44,
             },
         ]
     },

@@ -1,10 +1,12 @@
 import * as d3 from 'd3';
 import {dataObj} from './data.js';
+import {dataCities} from './data-cities.js';
 
 export default graphicMap => {
 
 	//define constants
-	const root = pack(dataObj);
+	// const root = pack(dataObj);
+	const root = pack(dataCities);
 	let focus = root; //keep track of which circle the chart is focused on
 	let currentView;
 
@@ -158,16 +160,20 @@ export default graphicMap => {
 const width = 800;
 const height = 800;
 
-const pack = (dataObj) => {
+// const pack = (dataObj) => {
+const pack = (dataCities) => {
 	//creates new pack layout and sets size and padding values
 	const packInstance = d3.pack();
 	packInstance.size([width, height]);
 	packInstance.padding(3);
 
 	//create root node by passing into d3 hierarchy, calculating value and sorting by nodes values
-	const rootNode = d3.hierarchy(dataObj); 
-	rootNode.sum(node => node.value);
-	rootNode.sort((a, b) => b.value - a.value);
+	const rootNode = d3.hierarchy(dataCities); 
+	// const rootNode = d3.hierarchy(dataObj); 
+	rootNode.sum(node => node.population);
+	// rootNode.sum(node => node.value);
+	rootNode.sort((a, b) => b.population - a.population);
+	// rootNode.sort((a, b) => b.value - a.value);
 
 	return packInstance(rootNode);
 };
