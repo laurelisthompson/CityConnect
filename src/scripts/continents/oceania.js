@@ -2,6 +2,8 @@
 //population in millions 
 //2.2 is 2,200,000
 // area in km²
+//gdp ppp as given from the IMF (international monetary fund) 2020
+    // in current international dollars, rounded to nearest whole number
 
 export const oceania = [
     {
