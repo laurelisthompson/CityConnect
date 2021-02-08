@@ -1,9 +1,9 @@
 import "./styles/index.scss";
-import graphicMap from './scripts/map';
+import circlePackingMap from './scripts/circle-packing';
 
 window.addEventListener("DOMContentLoaded", () => {
     //display d3 mapping
-    let mapping = document.querySelector("#d3map").appendChild(graphicMap());
+    let mapping = document.querySelector("#d3map").appendChild(circlePackingMap());
 
     //open and close modal when about is clicked
     let openModal = document.getElementById('open-modal');
