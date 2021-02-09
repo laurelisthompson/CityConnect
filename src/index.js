@@ -1,9 +1,15 @@
 import "./styles/index.scss";
-import circlePackingMap from './scripts/circle-packing';
+import cityPopulationMap from './scripts/cities-mapping';
+import countryAreaMap from './scripts/area-mapping';
+import countryPopulationMap from './scripts/population-mapping';
+import countryGDPMap from './scripts/gdp-mapping';
 
 window.addEventListener("DOMContentLoaded", () => {
     //display d3 mapping
-    let mapping = document.querySelector("#d3map").appendChild(circlePackingMap());
+    let citiesPopulationMapping = document.querySelector("#citiesPopulationMapping").appendChild(cityPopulationMap());
+    let countriesAreaMapping = document.querySelector("#countriesAreaMapping").appendChild(countryAreaMap());
+    let countriesPopulationMapping = document.querySelector("#countriesPopulationMapping").appendChild(countryPopulationMap());
+    let countriesGDPMapping = document.querySelector("#countriesGDPMapping").appendChild(countryGDPMap());
 
     //open and close modal when about is clicked
     let openModal = document.getElementById('open-modal');

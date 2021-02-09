@@ -20,25 +20,25 @@ export const africa = [
     },
     {
         name: "Benin",
-        population: 12451040,
+        population: 12.451040,
         area: 112622,
         gdp: 3443,
     },
     {
         name: "Botswana",
-        population: 2397241,
+        population: 2.397241,
         area: 582000,
         gdp: 16153,
     },
     {
         name: "Burkina Faso",
-        population: 21497096,
+        population: 21.497096,
         area: 272967,
         gdp: 2203,
     },
     {
         name: "Burundi",
-        population: 12255433,
+        population: 12.255433,
         area: 27834,
         gdp: 783,
     },
@@ -152,7 +152,7 @@ export const africa = [
     },
     {
         name: "Lesotho",
-        population: 2159079,
+        population: 2.159079,
         area: 30355,
         gdp: 2886,
     },

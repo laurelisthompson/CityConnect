@@ -1,4 +1,4 @@
-#d3map {
+#citiesPopulationMapping {
     display: flex;
     justify-content: center;
     vertical-align: center;
@@ -13,5 +13,55 @@
         overflow: hidden;
 
     }
-    
+}
+
+#countriesAreaMapping {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+
+    .svg-content {
+        // background-color: red;
+        width: 100%;
+        // height: auto;
+        height:  710px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        overflow: hidden;
+
+    }
+}
+
+#countriesPopulationMapping {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+
+    .svg-content {
+        // background-color: red;
+        width: 100%;
+        // height: auto;
+        height:  710px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        overflow: hidden;
+
+    }
+}
+
+#countriesGDPMapping {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+
+    .svg-content {
+        // background-color: red;
+        width: 100%;
+        // height: auto;
+        height:  710px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        overflow: hidden;
+
+    }
 }

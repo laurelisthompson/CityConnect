@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import {dataCities} from './data-cities.js';
 
-export default graphicMap => {
+export default citiesPopulationMapping => {
 
 	//define constants
 	const root = pack(dataCities);
@@ -153,7 +153,6 @@ export default graphicMap => {
 const width = 800;
 const height = 800;
 
-// const pack = (dataObj) => {
 const pack = (dataCities) => {
 	//creates new pack layout and sets size and padding values
 	const packInstance = d3.pack();
