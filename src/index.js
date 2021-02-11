@@ -5,11 +5,23 @@ import countryPopulationMap from './scripts/population-mapping';
 import countryGDPMap from './scripts/gdp-mapping';
 
 window.addEventListener("DOMContentLoaded", () => {
-    //display d3 mapping
-    let citiesPopulationMapping = document.querySelector("#citiesPopulationMapping").appendChild(cityPopulationMap());
-    let countriesAreaMapping = document.querySelector("#countriesAreaMapping").appendChild(countryAreaMap());
-    let countriesPopulationMapping = document.querySelector("#countriesPopulationMapping").appendChild(countryPopulationMap());
-    let countriesGDPMapping = document.querySelector("#countriesGDPMapping").appendChild(countryGDPMap());
+    //display d3 mapping with selection dropdown    
+    // let citiesPopulationMapping = document.querySelector("#citiesPopulationMapping").appendChild(cityPopulationMap());
+    // let countriesAreaMapping = document.querySelector("#countriesAreaMapping").appendChild(countryAreaMap());
+    // let countriesPopulationMapping = document.querySelector("#countriesPopulationMapping").appendChild(countryPopulationMap());
+    // let countriesGDPMapping = document.querySelector("#countriesGDPMapping").appendChild(countryGDPMap());
+
+    let leftDropdown = document.getElementById('leftMapping').addEventListener('change', function () {
+        if (this.value == "cityPop") {
+            document.querySelector("#d3mapping").appendChild(cityPopulationMap());
+        } else if (this.value == "area") {
+            document.querySelector("#d3mapping").appendChild(countryAreaMap());
+        } else if (this.value == "pop") {
+            document.querySelector("#d3mapping").appendChild(countryPopulationMap());
+        } else if (this.value == "gdp") {
+            document.querySelector("#d3mapping").appendChild(countryGDPMap());
+        };
+    });
 
     //open and close modal when about is clicked
     let openModal = document.getElementById('open-modal');
