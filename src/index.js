@@ -6,11 +6,9 @@ import countryGDPMap from './scripts/gdp-mapping';
 import { svg } from "d3";
 
 window.addEventListener("DOMContentLoaded", () => {
-    //display d3 mapping with selection dropdown    
+    //display d3 mappings with selection dropdown    
     let citiesPopulationMapping = document.querySelector("#d3leftMapping").appendChild(cityPopulationMap());
     let countriesAreaMapping = document.querySelector("#d3rightMapping").appendChild(countryAreaMap());
-    // let countriesPopulationMapping = document.querySelector("#countriesPopulationMapping").appendChild(countryPopulationMap());
-    // let countriesGDPMapping = document.querySelector("#countriesGDPMapping").appendChild(countryGDPMap());
 
     let leftDropdown = document.getElementById('leftMappingDrop').addEventListener('change', function () {
         if (this.value == "cityPop") {
