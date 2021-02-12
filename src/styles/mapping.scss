@@ -70,6 +70,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    margin-top: -40px;
+    z-index: 1;
     
     #d3leftMapping, #d3rightMapping {
         width: 50%;

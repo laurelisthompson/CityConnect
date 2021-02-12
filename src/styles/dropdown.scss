@@ -1,6 +1,17 @@
-#dropdown {
+.dropdown {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1000;
+
+    #leftMappingDrop, #rightMappingDrop {
+        font-family: 'Montserrat';
+        background-color:rgb(165, 203, 242);
+        border: 1px solid rgb(93, 161, 224);
+        color: rgb(93, 161, 224);
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
     
-    z-index: 3;
 }
