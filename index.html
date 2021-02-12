@@ -48,14 +48,25 @@
 
     <script src="./dist/main.js"></script>
 
-    <select id="leftMapping">
-        <option value="cityPop">City Populations</option>
-        <option value="area">Area</option>
-        <option value="pop">Population</option>
-        <option value="gdp">GDP</option>
-    <select>
+    <div id="dropdown">
+        <select id="leftMappingDrop">
+            <option value="cityPop">City Populations</option>
+            <option value="area">Area</option>
+            <option value="pop">Population</option>
+            <option value="gdp">GDP</option>
+        <select>
+        <select id="rightMappingDrop">
+            <option value="cityPop">City Populations</option>
+            <option value="area" selected>Area</option>
+            <option value="pop">Population</option>
+            <option value="gdp">GDP</option>
+        <select>
+    </div>
 
-    <div id="d3mapping"></div>
+    <div id="maps">
+        <div id="d3leftMapping"></div>
+        <div id="d3rightMapping"></div>
+    </div>
     
 </body>
 

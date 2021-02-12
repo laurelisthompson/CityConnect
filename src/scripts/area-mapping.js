@@ -15,7 +15,7 @@ export default countriesAreaMapping => {
     //if depth is 3, experience, return rgb(247, 247, 247)
 
     let svg = d3.create("svg");
-    svg = svg.attr("viewBox", [`-315 -325 650 650`]);
+    svg = svg.attr("viewBox", [`-400 -400 800 800`]);
     svg = svg.attr("class", "svg-content");
     svg = svg.on("click", (event) => zoom(event, root));
 
