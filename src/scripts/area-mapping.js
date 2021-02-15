@@ -24,13 +24,12 @@ export default countriesAreaMapping => {
     node = node.data(root.descendants().slice(1)); //get all node children, exclude itself
     node = node.join("circle");
     node.attr("fill", nd => {
-        if (!nd.children) return "white";
-        else if (nd.depth === 1) return "rgb(93, 161, 224)";
-        else return "rgb(14, 109, 204)";
+        if (!nd.children) return "#DFB349";
+        else return "#F2DCA6";
     });
     node = node.style("cursor", "pointer");
     node = node.on("mouseover", function () {
-        d3.select(this).attr("stroke", "rgb(224, 93, 161)");
+        d3.select(this).attr("stroke", "#254652");
         d3.select(this).attr("stroke-width", "1.5px");
     });
     node = node.on("mouseout", function () {

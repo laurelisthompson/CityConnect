@@ -1,24 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-color: rgb(165, 203, 242);
+    background-color: #f2f3f4;
 
     h1 {
         font-family: 'Montserrat';
         font-size: 50px;
         font-weight: 500;
-        font-style: italic;
         display: flex;
         justify-content: center;
-        color: rgb(247, 247, 247);
+        color: #254652;
         margin-bottom: 20px;
     }
 
     button.nav-links {
         font-family: 'Montserrat';
-        background-color:rgb(165, 203, 242);
-        border: 1px solid rgb(93, 161, 224);
-        color: rgb(93, 161, 224);
+        background-color:#f2f3f4;
+        border: 1px solid #254652;
+        color: #254652;
         padding: 5px 10px;
         border-radius: 3px;
         justify-content: center;
@@ -26,8 +25,8 @@ body {
     }
 
     button.nav-links:hover {
-        border: 1px solid rgb(224, 93, 161);
-        color: rgb(224, 93, 161);
+        border: 1px solid #e86f50;
+        color: #e86f50;
     }
 
     button.nav-links:focus {

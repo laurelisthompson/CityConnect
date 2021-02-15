@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     transform: translate(-50%, -50%);
-    background-color: rgb(14, 109, 204);
+    background-color: #254652;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
     top: 34%;
     left: 50%;
@@ -31,7 +31,7 @@
         font-style: normal;
         text-align: justify;
         font-size: 14px;
-        color: rgb(247, 247, 247);
+        color: #f2f3f4;
     }
 
     span {
@@ -40,12 +40,12 @@
         margin-bottom: 20px;
         font-size: 16px;
         font-weight: 600;
-        color: rgb(247, 247, 247);
+        color: #f2f3f4;
         align-self: center;
     }
 
     span:hover {
-        color: rgb(224, 93, 161);
+        color: #e86f50;
         cursor: pointer;
     }
 
@@ -57,7 +57,7 @@
     }
 
     button:hover {
-        color: rgb(224, 93, 161);
+        color: #e86f50;
     }
 
     a {
@@ -67,7 +67,7 @@
     }
 
     a:hover {
-        color: rgb(224, 93, 161);
+        color: #e86f50;
     }
 }
 
