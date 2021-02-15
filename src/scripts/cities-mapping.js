@@ -49,7 +49,7 @@ export default citiesPopulationMapping => {
 	textLabel = textLabel.selectAll("text");
 	textLabel = textLabel.data(root.descendants());
 	textLabel = textLabel.join("text");
-	textLabel = textLabel.attr("class", "mapping-text");
+	textLabel = textLabel.attr("class", "tooltip");
 	textLabel = textLabel.text(node => node.data.name);
 	textLabel = textLabel.style("display", node => node.parent === root ? "inline" : "none");
 	textLabel = textLabel.style("font", "16px sans-serif");
