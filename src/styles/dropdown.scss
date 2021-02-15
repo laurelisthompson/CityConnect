@@ -15,3 +15,11 @@
     }
     
 }
+
+#leftMappingDrop:focus, #rightMappingDrop:focus {
+    outline: none;
+}
+
+#leftMappingDrop:hover, #rightMappingDrop:hover {
+    cursor: pointer;
+}
