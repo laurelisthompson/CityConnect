@@ -86,7 +86,7 @@ export default citiesPopulationMapping => {
 				let yTr = yDif * prop;
 				return `translate(${xTr}, ${yTr})`;
 			})
-		.style("fill", node => node.parent === focus ? "rgb(224, 93, 161)" : null)
+		.style("fill", node => node.parent === focus ? "#f2f3f4" : null)
 		.attr("text-anchor", "middle");
 
 		expBio.attr("transform", nd => {
@@ -96,7 +96,7 @@ export default citiesPopulationMapping => {
 			let yTr = yDif * prop;
 			return `translate(${xTr}, ${yTr})`;
 		})
-		.style("fill", node => node.parent === focus ? "rgb(224, 93, 161)" : null)
+		.style("fill", node => node.parent === focus ? "#f2f3f4" : null)
 		.attr("text-anchor", "middle");
 
 		node.attr("r", nd => {
