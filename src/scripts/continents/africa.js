@@ -13,6 +13,7 @@ export const africa = [
         area: 2381741,
         areatxt: "2,381,741 km²",
         gdp: 11041,
+        gdptext: "$11,041",
     },
     {
         name: "Angola",
@@ -21,6 +22,7 @@ export const africa = [
         area: 1246700,
         areatxt: "1,246,700 km²",
         gdp: 6978,
+        gdptext: "$6,978",
     },
     {
         name: "Benin",
@@ -29,6 +31,7 @@ export const africa = [
         area: 112622,
         areatxt: "112,622 km²",
         gdp: 3443,
+        gdptext: "$3,443",
     },
     {
         name: "Botswana",
@@ -37,6 +40,7 @@ export const africa = [
         area: 582000,
         areatxt: "582,000 km²",
         gdp: 16153,
+        gdptext: "$16,153",
     },
     {
         name: "Burkina Faso",
@@ -45,6 +49,7 @@ export const africa = [
         area: 272967,
         areatxt: "272,967 km²",
         gdp: 2203,
+        gdptext: "$2,203",
     },
     {
         name: "Burundi",
@@ -53,6 +58,7 @@ export const africa = [
         area: 27834,
         areatxt: "27,834 km²",
         gdp: 783,
+        gdptext: "$783",
     },
     {
         name: "Cameroon",
@@ -61,6 +67,7 @@ export const africa = [
         area: 475442,
         areatxt: "475,442 km²",
         gdp: 3710,
+        gdptext: "$3,710",
     },
     {
         name: "Cabo Verde",
@@ -69,6 +76,7 @@ export const africa = [
         area: 4033,
         areatxt: "4,033 km²",
         gdp: 6980,
+        gdptext: "$6,980",
     },
     {
         name: "Central African Republic",
@@ -77,6 +85,7 @@ export const africa = [
         area: 622984,
         areatxt: "622,984 km²",
         gdp: 972,
+        gdptext: "$972",
     },
     {
         name: "Chad",
@@ -85,6 +94,7 @@ export const africa = [
         area: 1284000,
         areatxt: "1,284,000 km²",
         gdp: 1618,
+        gdptext: "$1,618",
     },
     {
         name: "Comoros",
@@ -93,6 +103,7 @@ export const africa = [
         area: 1862,
         areatxt: "1,862 km²",
         gdp: 3014,
+        gdptext: "$3,014",
     },
     {
         name: "Djibouti",
@@ -101,6 +112,7 @@ export const africa = [
         area: 23200,
         areatxt: "23,200 km²",
         gdp: 5074,
+        gdptext: "$5,074",
     },
     {
         name: "Democratic Republic of the Congo",
@@ -109,6 +121,7 @@ export const africa = [
         area: 2344858,
         areatxt: "2,344,858 km²",
         gdp: 978,
+        gdptext: "$978",
     },
     {
         name: "Egypt",
@@ -117,6 +130,7 @@ export const africa = [
         area: 1002450,
         areatxt: "1,002,450 km²",
         gdp: 12719,
+        gdptext: "$12,719",
     },
     {
         name: "Equatorial Guinea",
@@ -125,6 +139,7 @@ export const africa = [
         area: 28051,
         areatxt: "28,051 km²",
         gdp: 17782,
+        gdptext: "$17,782",
     },
     {
         name: "Eritrea",
@@ -133,6 +148,7 @@ export const africa = [
         area: 117600,
         areatxt: "117,600 km²",
         gdp: 1824,
+        gdptext: "$1,824",
     },
     {
         name: "Ethiopia",
@@ -141,6 +157,7 @@ export const africa = [
         area: 1104300,
         areatxt: "1,104,300 km²",
         gdp: 2772,
+        gdptext: "$2,772",
     },
     {
         name: "Gabon",
@@ -149,6 +166,7 @@ export const africa = [
         area: 267668,
         areatxt: "267,668 km²",
         gdp: 15854,
+        gdptext: "$15,854",
     },
     {
         name: "The Gambia",
@@ -157,6 +175,7 @@ export const africa = [
         area: 10689,
         areatxt: "10,689 km²",
         gdp: 2239,
+        gdptext: "$2,239",
     },
     {
         name: "Ghana",
@@ -165,6 +184,7 @@ export const africa = [
         area: 238533,
         areatxt: "238,533 km²",
         gdp: 5707,
+        gdptext: "$5,707",
     },
     {
         name: "Guinea",
@@ -173,6 +193,7 @@ export const africa = [
         area: 245857,
         areatxt: "245,857 km²",
         gdp: 2516,
+        gdptext: "$2,516",
     },
     {
         name: "Guinea Bissau",
@@ -181,6 +202,7 @@ export const africa = [
         area: 36125,
         areatxt: "36,125 km²",
         gdp: 2340,
+        gdptext: "$2,340",
     },
     {
         name: "Côte d'Ivoire",
@@ -189,6 +211,7 @@ export const africa = [
         area: 322463,
         areatxt: "322,463 km²",
         gdp: 5360,
+        gdptext: "$5,360",
     },
     {
         name: "Kenya",
@@ -197,6 +220,7 @@ export const africa = [
         area: 580367,
         areatxt: "580,367 km²",
         gdp: 4993,
+        gdptext: "$4,993",
     },
     {
         name: "Lesotho",
@@ -205,6 +229,7 @@ export const africa = [
         area: 30355,
         areatxt: "30,355 km²",
         gdp: 2886,
+        gdptext: "$2,886",
     },
     {
         name: "Liberia",
@@ -213,6 +238,7 @@ export const africa = [
         area: 111369,
         areatxt: "111,369 km²",
         gdp: 1536,
+        gdptext: "$1,536",
     },
     {
         name: "Libya",
@@ -221,6 +247,7 @@ export const africa = [
         area: 1759540,
         areatxt: "1,759,540 km²",
         gdp: 4746,
+        gdptext: "$4,746",
     },
     {
         name: "Madagascar",
@@ -229,6 +256,7 @@ export const africa = [
         area: 587041,
         areatxt: "587,041 km²",
         gdp: 1647,
+        gdptext: "$1,647",
     },
     {
         name: "Malawi",
@@ -237,6 +265,7 @@ export const africa = [
         area: 118484,
         areatxt: "118,484 km²",
         gdp: 995,
+        gdptext: "$995",
     },
     {
         name: "Mali",
@@ -245,6 +274,7 @@ export const africa = [
         area: 1240192,
         areatxt: "1,240,192 km²",
         gdp: 2421,
+        gdptext: "$2,421",
     },
     {
         name: "Mauritania",
@@ -253,6 +283,7 @@ export const africa = [
         area: 1030700,
         areatxt: "1,030,700 km²",
         gdp: 5797,
+        gdptext: "$5,797",
     },
     {
         name: "Mauritius",
@@ -261,6 +292,7 @@ export const africa = [
         area: 2040,
         areatxt: "2,040 km²",
         gdp: 20719,
+        gdptext: "$20,719",
     },
     {
         name: "Morocco",
@@ -269,6 +301,7 @@ export const africa = [
         area: 446550,
         areatxt: "446,550 km²",
         gdp: 7609,
+        gdptext: "$7,609",
     },
     {
         name: "Mozambique",
@@ -277,6 +310,7 @@ export const africa = [
         area: 801590,
         areatxt: "801,590 km²",
         gdp: 1279,
+        gdptext: "$1,279",
     },
     {
         name: "Namibia",
@@ -285,6 +319,7 @@ export const africa = [
         area: 825615,
         areatxt: "825,615 km²",
         gdp: 9537,
+        gdptext: "$9,537",
     },
     {
         name: "Niger",
@@ -293,6 +328,7 @@ export const africa = [
         area: 1267000,
         areatxt: "1,267,000 km²",
         gdp: 1253,
+        gdptext: "$1,253",
     },
     {
         name: "Nigeria",
@@ -301,6 +337,7 @@ export const africa = [
         area: 923768,
         areatxt: "923,768 km²",
         gdp: 5066,
+        gdptext: "$5,066",
     },
     {
         name: "Republic of the Congo",
@@ -309,6 +346,7 @@ export const africa = [
         area: 342000,
         areatxt: "342,000 km²",
         gdp: 4233,
+        gdptext: "$4,233",
     },
     {
         name: "Rwanda",
@@ -317,6 +355,7 @@ export const africa = [
         area: 26338,
         areatxt: "26,338 km²",
         gdp: 2393,
+        gdptext: "$2,393",
     },
     {
         name: "São Tomé and Príncipe",
@@ -325,6 +364,7 @@ export const africa = [
         area: 964,
         areatxt: "964 km²",
         gdp: 3837,
+        gdptext: "$3,837",
     },
     {
         name: "Senegal",
@@ -333,6 +373,7 @@ export const africa = [
         area: 196772,
         areatxt: "196,772 km²",
         gdp: 3463,
+        gdptext: "$3,463",
     },
     {
         name: "Seychelles",
@@ -341,6 +382,7 @@ export const africa = [
         area: 452,
         areatxt: "452 km²",
         gdp: 26388,
+        gdptext: "$26,388",
     },
     {
         name: "Sierra Leone",
@@ -349,6 +391,7 @@ export const africa = [
         area: 71740,
         areatxt: "71,740 km²",
         gdp: 1711,
+        gdptext: "$1,711",
     },
     // {
     //     name: "Somalia",
@@ -363,6 +406,7 @@ export const africa = [
         area: 1221037,
         areatxt: "1,221,037 km²",
         gdp: 11911,
+        gdptext: "$11,911",
     },
     {
         name: "South Sudan",
@@ -371,6 +415,7 @@ export const africa = [
         area: 619745,
         areatxt: "619,745 km²",
         gdp: 884,
+        gdptext: "$884",
     },
     {
         name: "Sudan",
@@ -379,6 +424,7 @@ export const africa = [
         area: 1886068,
         areatxt: "1,886,068 km²",
         gdp: 3749,
+        gdptext: "$3,749",
     },
     {
         name: "Eswatini",
@@ -387,6 +433,7 @@ export const africa = [
         area: 17364,
         areatxt: "17,364 km²",
         gdp: 8955,
+        gdptext: "$8,955",
     },
     {
         name: "Tanzania",
@@ -395,6 +442,7 @@ export const africa = [
         area: 945087,
         areatxt: "945,087 km²",
         gdp: 2851,
+        gdptext: "$2,851",
     },
     {
         name: "Togo",
@@ -403,6 +451,7 @@ export const africa = [
         area: 56785,
         areatxt: "56,785 km²",
         gdp: 1640,
+        gdptext: "$1,640",
     },
     {
         name: "Tunisia",
@@ -411,6 +460,7 @@ export const africa = [
         area: 163610,
         areatxt: "163,610 km²",
         gdp: 10382,
+        gdptext: "$10,382",
     },
     {
         name: "Uganda",
@@ -419,6 +469,7 @@ export const africa = [
         area: 241550,
         areatxt: "241,550 km²",
         gdp: 2585,
+        gdptext: "$2,585",
     },
     {
         name: "Zambia",
@@ -427,6 +478,7 @@ export const africa = [
         area: 752612,
         areatxt: "752,612 km²",
         gdp: 3302,
+        gdptext: "$3,302",
     },
     {
         name: "Zimbabwe",
@@ -435,5 +487,6 @@ export const africa = [
         area: 390757,
         areatxt: "390,757 km²",
         gdp: 2583,
+        gdptext: "$2,583",
     },
 ];

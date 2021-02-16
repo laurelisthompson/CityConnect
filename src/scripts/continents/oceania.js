@@ -13,6 +13,7 @@ export const oceania = [
         populationtxt: "25,788,215",
         areatxt: "7,692,024 km²",
         gdp: 50845,
+        gdptext: "$50,845",
     },
     {
         name: "Fiji",
@@ -21,6 +22,8 @@ export const oceania = [
         populationtxt: "902,906",
         areatxt: "18,274 km²",
         gdp: 11175,
+        gdptext: "$11,175",
+        
     },
     {
         name: "Kiribati",
@@ -29,6 +32,7 @@ export const oceania = [
         populationtxt: "121,392",
         areatxt: "811 km²",
         gdp: 2126,
+        gdptext: "$2,126",
     },
     {
         name: "Marshall Islands",
@@ -37,6 +41,7 @@ export const oceania = [
         populationtxt: "59,610",
         areatxt: "181 km²",
         gdp: 3786,
+        gdptext: "$3,786",
     },
     {
         name: "Federated States of Micronesia",
@@ -45,6 +50,7 @@ export const oceania = [
         populationtxt: "116,254",
         areatxt: "702 km²",
         gdp: 3447,
+        gdptext: "$3,447",
     },
     {
         name: "Nauru",
@@ -53,6 +59,7 @@ export const oceania = [
         populationtxt: "10,876",
         areatxt: "21 km²",
         gdp: 9875,
+        gdptext: "$9,875",
     },
     {
         name: "New Zealand",
@@ -61,6 +68,7 @@ export const oceania = [
         populationtxt: "4,860,643",
         areatxt: "270,467 km²",
         gdp: 41072,
+        gdptext: "$41,072",
     },
     {
         name: "Palau",
@@ -69,6 +77,7 @@ export const oceania = [
         populationtxt: "18,169",
         areatxt: "459 km²",
         gdp: 14159,
+        gdptext: "$14,159",
     },
     {
         name: "Papua New Guinea",
@@ -77,6 +86,7 @@ export const oceania = [
         populationtxt: "9,119,010",
         areatxt: "462,840 km²",
         gdp: 3861,
+        gdptext: "$3,861",
     },
     {
         name: "Samoa",
@@ -85,6 +95,7 @@ export const oceania = [
         populationtxt: "200,149",
         areatxt: "2,831 km²",
         gdp: 5547,
+        gdptext: "$5,547",
     },
     {
         name: "Solomon Islands",
@@ -93,6 +104,7 @@ export const oceania = [
         populationtxt: "703,996",
         areatxt: "28,896 km²",
         gdp: 2442,
+        gdptext: "$2,442",
     },
     {
         name: "Tonga",
@@ -101,6 +113,7 @@ export const oceania = [
         populationtxt: "106,760",
         areatxt: "747 km²",
         gdp: 6074,
+        gdptext: "$6,074",
     },
     {
         name: "Tuvalu",
@@ -109,6 +122,7 @@ export const oceania = [
         populationtxt: "11,931",
         areatxt: "26 km²",
         gdp: 4480,
+        gdptext: "$4,480",
     },
     {
         name: "Vanuatu",
@@ -117,5 +131,6 @@ export const oceania = [
         populationtxt: "314,464",
         areatxt: "12,189 km²",
         gdp: 2649,
+        gdptext: "$2,649",
     },
 ];

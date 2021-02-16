@@ -13,6 +13,7 @@ export const northAmerica = [
         populationtxt: "98,731",
         areatxt: "442 km²",
         gdp: 18655,
+        gdptext: "$18,655",
     },
     {
         name: "The Bahamas",
@@ -21,6 +22,7 @@ export const northAmerica = [
         populationtxt: "396,913",
         areatxt: "13,943 km²",
         gdp: 33808,
+        gdptext: "$33,808",
     },
     {
         name: "Barbados",
@@ -29,6 +31,7 @@ export const northAmerica = [
         populationtxt: "287,711",
         areatxt: "430 km²",
         gdp: 14568,
+        gdptext: "$14,568",
     },
     {
         name: "Belize",
@@ -37,6 +40,7 @@ export const northAmerica = [
         populationtxt: "404,914",
         areatxt: "22,966 km²",
         gdp: 5695,
+        gdptext: "$5,695",
     },
     {
         name: "Canada",
@@ -45,6 +49,7 @@ export const northAmerica = [
         populationtxt: "38,067,903",
         areatxt: "9,984,670 km²",
         gdp: 47569,
+        gdptext: "$47,569",
     },
     {
         name: "Costa Rica",
@@ -53,6 +58,7 @@ export const northAmerica = [
         populationtxt: "5,139,052",
         areatxt: "51,100 km²",
         gdp: 19309,
+        gdptext: "$19,309",
     },
     {
         name: "Cuba",
@@ -61,6 +67,7 @@ export const northAmerica = [
         populationtxt: "11,317,505",
         areatxt: "109,886 km²",
         gdp: 11900,
+        gdptext: "$11,900",
     },
     {
         name: "El Salvador",
@@ -69,6 +76,7 @@ export const northAmerica = [
         populationtxt: "6,518,499",
         areatxt: "21,041 km²",
         gdp: 8401,
+        gdptext: "$8,401",
     },
     {
         name: "Grenada",
@@ -77,6 +85,7 @@ export const northAmerica = [
         populationtxt: "113,021",
         areatxt: "344 km²",
         gdp: 16454,
+        gdptext: "$16,454",
     },
     {
         name: "Guatemala",
@@ -85,6 +94,7 @@ export const northAmerica = [
         populationtxt: "18,249,860",
         areatxt: "108,889 km²",
         gdp: 8267,
+        gdptext: "$8,267",
     },
     {
         name: "Haiti",
@@ -93,6 +103,7 @@ export const northAmerica = [
         populationtxt: "11,541,685",
         areatxt: "27,750 km²",
         gdp: 1728,
+        gdptext: "$1,728",
     },
     {
         name: "Honduras",
@@ -101,6 +112,7 @@ export const northAmerica = [
         populationtxt: "10,062,991",
         areatxt: "112,492 km²",
         gdp: 5538,
+        gdptext: "$5,538",
     },
     {
         name: "Jamaica",
@@ -109,6 +121,7 @@ export const northAmerica = [
         populationtxt: "2,973,463",
         areatxt: "10,991 km²",
         gdp: 10221,
+        gdptext: "$10,221",
     },
     {
         name: "Mexico",
@@ -117,6 +130,7 @@ export const northAmerica = [
         populationtxt: "130,262,216",
         areatxt: "1,964,375 km²",
         gdp: 18804,
+        gdptext: "$18,804",
     },
     {
         name: "Nicaragua",
@@ -125,6 +139,7 @@ export const northAmerica = [
         populationtxt: "6,702,385",
         areatxt: "130,373 km²",
         gdp: 5439,
+        gdptext: "$5,439",
     },
     {
         name: "Panama",
@@ -133,6 +148,7 @@ export const northAmerica = [
         populationtxt: "4,381,579",
         areatxt: "75,417 km²",
         gdp: 30034,
+        gdptext: "$30,034",
     },
     {
         name: "Saint Kitts and Nevis",
@@ -141,6 +157,7 @@ export const northAmerica = [
         populationtxt: "53,544",
         areatxt: "261 km²",
         gdp: 21028,
+        gdptext: "$21,028",
     },
     {
         name: "Saint Lucia",
@@ -149,6 +166,7 @@ export const northAmerica = [
         populationtxt: "184,400",
         areatxt: "539 km²",
         gdp: 13708,
+        gdptext: "$13,708",
     },
     {
         name: "Saint Vincent and The Grenadines",
@@ -157,6 +175,7 @@ export const northAmerica = [
         populationtxt: "111,263",
         areatxt: "389 km²",
         gdp: 12268,
+        gdptext: "$12,268",
     },
     {
         name: "Trinidad and Tobago",
@@ -165,6 +184,7 @@ export const northAmerica = [
         populationtxt: "1,403,375",
         areatxt: "5,130 km²",
         gdp: 25964,
+        gdptext: "$25,964",
     },
     {
         name: "United States",
@@ -173,5 +193,6 @@ export const northAmerica = [
         populationtxt: "332,915,073",
         areatxt: "9,629,091 km²",
         gdp: 63051,
+        gdptext: "$63,051",
     },
 ];

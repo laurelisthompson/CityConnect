@@ -13,6 +13,7 @@ export const southAmerica = [
         populationtxt: "45,605,826",
         areatxt: "2,780,400 km²",
         gdp: 20370,
+        gdptext: "$20,370",
     },
     {
         name: "Bolivia",
@@ -21,6 +22,7 @@ export const southAmerica = [
         populationtxt: "11,832,940",
         areatxt: "1,098,581 km²",
         gdp: 8342,
+        gdptext: "$8,342",
     },
     {
         name: "Brazil",
@@ -29,6 +31,7 @@ export const southAmerica = [
         populationtxt: "213,993,437",
         areatxt: "8,515,799 km²",
         gdp: 14563,
+        gdptext: "$14,563",
     },
     {
         name: "Chile",
@@ -37,6 +40,7 @@ export const southAmerica = [
         populationtxt: "19,212,361",
         areatxt: "756,102 km²",
         gdp: 23455,
+        gdptext: "$23,455",
     },
     {
         name: "Columbia",
@@ -45,6 +49,7 @@ export const southAmerica = [
         populationtxt: "51,265,844",
         areatxt: "1,141,748 km²",
         gdp: 14137,
+        gdptext: "$14,137",
     },
     {
         name: "Ecuador",
@@ -53,6 +58,7 @@ export const southAmerica = [
         populationtxt: "17,888,475",
         areatxt: "276,841 km²",
         gdp: 10617,
+        gdptext: "$10,617",
     },
     {
         name: "Guyana",
@@ -61,6 +67,7 @@ export const southAmerica = [
         populationtxt: "790,326",
         areatxt: "214,969 km²",
         gdp: 17360,
+        gdptext: "$17,360",
     },
     {
         name: "Paraguay",
@@ -69,6 +76,7 @@ export const southAmerica = [
         populationtxt: "7,219,638",
         areatxt: "406,750 km²",
         gdp: 12503,
+        gdptext: "$12,503",
     },
     {
         name: "Peru",
@@ -77,6 +85,7 @@ export const southAmerica = [
         populationtxt: "33,359,418",
         areatxt: "1,285,216 km²",
         gdp: 11516,
+        gdptext: "$11,516",
     },
     {
         name: "Suriname",
@@ -85,6 +94,7 @@ export const southAmerica = [
         populationtxt: "591,800",
         areatxt: "163,820 km²",
         gdp: 14605,
+        gdptext: "$14,605",
     },
     {
         name: "Uruguay",
@@ -93,6 +103,7 @@ export const southAmerica = [
         populationtxt: "3,485,151",
         areatxt: "176,215 km²",
         gdp: 21338,
+        gdptext: "$21,338",
     },
     {
         name: "Venezuela",
@@ -101,5 +112,6 @@ export const southAmerica = [
         populationtxt: "28,704,954",
         areatxt: "916,445 km²",
         gdp: 12400,
+        gdptext: "$12,400",
     },
 ];

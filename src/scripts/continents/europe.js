@@ -13,6 +13,7 @@ export const europe = [
         populationtxt: "2,872,933",
         areatxt: "28,748 km²",
         gdp: 13651,
+        gdptext: "$13,651",
     },
     {
         name: "Andorra",
@@ -21,6 +22,7 @@ export const europe = [
         populationtxt: "77,355",
         areatxt: "468 km²",
         gdp: 49900,
+        gdptext: "$49,900",
     },
     {
         name: "Armenia",
@@ -29,6 +31,7 @@ export const europe = [
         populationtxt: "2,968,127",
         areatxt: "29,743 km²",
         gdp: 13735,
+        gdptext: "$13,735",
     },
     {
         name: "Austria",
@@ -37,6 +40,7 @@ export const europe = [
         populationtxt: "9,043,070",
         areatxt: "83,858 km²",
         gdp: 55406,
+        gdptext: "$55,406",
     },
     {
         name: "Azerbaijan",
@@ -45,6 +49,7 @@ export const europe = [
         populationtxt: "10,223,342",
         areatxt: "6,960 km²",
         gdp: 14499,
+        gdptext: "$14,499",
     },
     {
         name: "Belarus",
@@ -53,6 +58,7 @@ export const europe = [
         populationtxt: "9,442,862",
         areatxt: "207,600 km²",
         gdp: 19759,
+        gdptext: "$19,759",
     },
     {
         name: "Belgium",
@@ -61,6 +67,7 @@ export const europe = [
         populationtxt: "11,632,326",
         areatxt: "30,510 km²",
         gdp: 50114,
+        gdptext: "$50,114",
     },
     {
         name: "Bosnia and Herzegovina",
@@ -69,6 +76,7 @@ export const europe = [
         populationtxt: "3,263,466",
         areatxt: "51,129 km²",
         gdp: 14895,
+        gdptext: "$14,895",
     },
     {
         name: "Bulgaria",
@@ -77,6 +85,7 @@ export const europe = [
         populationtxt: "6,896,663",
         areatxt: "110,994 km²",
         gdp: 23741,
+        gdptext: "$23,741",
     },
     {
         name: "Croatia",
@@ -85,6 +94,7 @@ export const europe = [
         populationtxt: "4,081,651",
         areatxt: "56,594 km²",
         gdp: 27681,
+        gdptext: "$27,681",
     },
     {
         name: "Cyprus",
@@ -93,6 +103,7 @@ export const europe = [
         populationtxt: "1,215,584",
         areatxt: "9,251 km²",
         gdp: 39079,
+        gdptext: "$39,079",
     },
     {
         name: "Czech Republic",
@@ -101,6 +112,7 @@ export const europe = [
         populationtxt: "10,724,555",
         areatxt: "78,866 km²",
         gdp: 40293,
+        gdptext: "$40,293",
     },
     {
         name: "Denmark",
@@ -109,6 +121,7 @@ export const europe = [
         populationtxt: "5,813,298",
         areatxt: "44,493 km²",
         gdp: 57781,
+        gdptext: "$57,781",
     },
     {
         name: "Estonia",
@@ -117,6 +130,7 @@ export const europe = [
         populationtxt: "1,325,185",
         areatxt: "45,339 km²",
         gdp: 37033,
+        gdptext: "$37,033",
     },
     {
         name: "Finland",
@@ -125,6 +139,7 @@ export const europe = [
         populationtxt: "5,548,360",
         areatxt: "338,145 km²",
         gdp: 49334,
+        gdptext: "$49,334",
     },
     {
         name: "France",
@@ -133,6 +148,7 @@ export const europe = [
         populationtxt: "65,426,179",
         areatxt: "551,695 km²",
         gdp: 45454,
+        gdptext: "$45,454",
     },
     {
         name: "Georgia",
@@ -141,6 +157,7 @@ export const europe = [
         populationtxt: "3,979,765",
         areatxt: "69,700 km²",
         gdp: 15142,
+        gdptext: "$15,142",
     },
     {
         name: "Germany",
@@ -149,6 +166,7 @@ export const europe = [
         populationtxt: "83,900,473",
         areatxt: "357,386 km²",
         gdp: 53571,
+        gdptext: "$53,571",
     },
     {
         name: "Greece",
@@ -157,6 +175,7 @@ export const europe = [
         populationtxt: "10,370,744",
         areatxt: "131,940 km²",
         gdp: 29045,
+        gdptext: "$29,045",
     },
     {
         name: "Hungary",
@@ -165,6 +184,7 @@ export const europe = [
         populationtxt: "9,634,164",
         areatxt: "93,030 km²",
         gdp: 32434,
+        gdptext: "$32,434",
     },
     {
         name: "Iceland",
@@ -173,6 +193,7 @@ export const europe = [
         populationtxt: "343,353",
         areatxt: "102,775 km²",
         gdp: 54482,
+        gdptext: "$54,482",
     },
     {
         name: "Ireland",
@@ -181,6 +202,7 @@ export const europe = [
         populationtxt: "4,982,907",
         areatxt: "70,273 km²",
         gdp: 89383,
+        gdptext: "$89,383",
     },
     {
         name: "Italy",
@@ -189,6 +211,7 @@ export const europe = [
         populationtxt: "60,367,477",
         areatxt: "301,338 km²",
         gdp: 40066,
+        gdptext: "$40,066",
     },
     {
         name: "Latvia",
@@ -197,6 +220,7 @@ export const europe = [
         populationtxt: "1,866,942",
         areatxt: "64,589 km²",
         gdp: 30579,
+        gdptext: "$30,579",
     },
     {
         name: "Liechtenstein",
@@ -205,6 +229,7 @@ export const europe = [
         populationtxt: "38,250",
         areatxt: "160 km²",
         gdp: 139100,
+        gdptext: "$139,100",
     },
     {
         name: "Lithuania",
@@ -213,6 +238,7 @@ export const europe = [
         populationtxt: "2,689,862",
         areatxt: "65,300 km²",
         gdp: 38605,
+        gdptext: "$38,605",
     },
     {
         name: "Luxembourg",
@@ -221,6 +247,7 @@ export const europe = [
         populationtxt: "634,814",
         areatxt: "2,586 km²",
         gdp: 112875,
+        gdptext: "$112,875",
     },
     {
         name: "North Macedonia",
@@ -229,6 +256,7 @@ export const europe = [
         populationtxt: "2,082,658",
         areatxt: "25,713 km²",
         gdp: 16609,
+        gdptext: "$16,609",
     },
     {
         name: "Malta",
@@ -237,6 +265,7 @@ export const europe = [
         populationtxt: "442,784",
         areatxt: "316 km²",
         gdp: 43087,
+        gdptext: "$43,087",
     },
     {
         name: "Moldova",
@@ -245,6 +274,7 @@ export const europe = [
         populationtxt: "4,024,019",
         areatxt: "33,846 km²",
         gdp: 13253,
+        gdptext: "$13,253",
     },
     {
         name: "Monaco",
@@ -253,6 +283,7 @@ export const europe = [
         populationtxt: "39,511",
         areatxt: "2 km²",
         gdp: 115700,
+        gdptext: "$115,700",
     },
     {
         name: "Montenegro",
@@ -261,6 +292,7 @@ export const europe = [
         populationtxt: "628,053",
         areatxt: "13,812 km²",
         gdp: 19931,
+        gdptext: "$19,931",
     },
     {
         name: "Netherlands",
@@ -269,6 +301,7 @@ export const europe = [
         populationtxt: "17,173,099",
         areatxt: "41,198 km²",
         gdp: 57101,
+        gdptext: "$57,101",
     },
     {
         name: "Norway",
@@ -277,6 +310,7 @@ export const europe = [
         populationtxt: "5,465,630",
         areatxt: "385,178 km²",
         gdp: 64856,
+        gdptext: "$64,856",
     },
     {
         name: "Poland",
@@ -285,6 +319,7 @@ export const europe = [
         populationtxt: "37,797,005",
         areatxt: "312,685 km²",
         gdp: 33739,
+        gdptext: "$33,739",
     },
     {
         name: "Portugal",
@@ -293,6 +328,7 @@ export const europe = [
         populationtxt: "10,167,925",
         areatxt: "91,568 km²",
         gdp: 33131,
+        gdptext: "$33,131",
     },
     {
         name: "Romania",
@@ -301,6 +337,7 @@ export const europe = [
         populationtxt: "19,127,774",
         areatxt: "238,397 km²",
         gdp: 30141,
+        gdptext: "$30,141",
     },
     {
         name: "Russia",
@@ -309,6 +346,7 @@ export const europe = [
         populationtxt: "145,912,025",
         areatxt: "17,125,191 km²",
         gdp: 27394,
+        gdptext: "$27,394",
     },
     {
         name: "San Marino",
@@ -317,6 +355,7 @@ export const europe = [
         populationtxt: "34,017",
         areatxt: "61 km²",
         gdp: 56600,
+        gdptext: "$56,600",
     },
     {
         name: "Serbia",
@@ -325,6 +364,7 @@ export const europe = [
         populationtxt: "8,697,550",
         areatxt: "77,453 km²",
         gdp: 18840,
+        gdptext: "$18,840",
     },
     {
         name: "Slovakia",
@@ -333,6 +373,7 @@ export const europe = [
         populationtxt: "5,460,721",
         areatxt: "49,036 km²",
         gdp: 32184,
+        gdptext: "$32,184",
     },
     {
         name: "Slovenia",
@@ -341,6 +382,7 @@ export const europe = [
         populationtxt: "2,078,724",
         areatxt: "20,273 km²",
         gdp: 38506,
+        gdptext: "$38,506",
     },
     {
         name: "Spain",
@@ -349,6 +391,7 @@ export const europe = [
         populationtxt: "46,745,216",
         areatxt: "498,511 km²",
         gdp: 38143,
+        gdptext: "$38,143",
     },
     {
         name: "Sweden",
@@ -357,6 +400,7 @@ export const europe = [
         populationtxt: "10,160,169",
         areatxt: "450,295 km²",
         gdp: 52477,
+        gdptext: "$52,477",
     },
     {
         name: "Switzerland",
@@ -365,6 +409,7 @@ export const europe = [
         populationtxt: "8,715,494",
         areatxt: "41,290 km²",
         gdp: 68340,
+        gdptext: "$68,340",
     },
     {
         name: "Turkey",
@@ -373,6 +418,7 @@ export const europe = [
         populationtxt: "85,042,738",
         areatxt: "783,562 km²",
         gdp: 28294,
+        gdptext: "$28,294",
     },
     {
         name: "Ukraine",
@@ -381,6 +427,7 @@ export const europe = [
         populationtxt: "43,466,819",
         areatxt: "603,628 km²",
         gdp: 12710,
+        gdptext: "$12,710",
     },
     {
         name: "United Kingdom",
@@ -389,5 +436,6 @@ export const europe = [
         populationtxt: "68,207,116",
         areatxt: "242,495 km²",
         gdp: 44288,
+        gdptext: "$44,288",
     },
 ];

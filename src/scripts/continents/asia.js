@@ -13,6 +13,7 @@ export const asia = [
         area: 652230,
         areatxt: "652,230 km²",
         gdp: 2073,
+        gdptext: "$2,073",
     },
     {
         name: "Armenia",
@@ -21,6 +22,7 @@ export const asia = [
         populationtxt: "2,968,127",
         areatxt: "29,843 km²",
         gdp: 13735,
+        gdptext: "$13,735",
     },
     {
         name: "Azerbaijan",
@@ -29,6 +31,7 @@ export const asia = [
         populationtxt: "10,223,342",
         areatxt: "86,000 km²",
         gdp: 14499,
+        gdptext: "$14,499",
     },
     {
         name: "Bahrain",
@@ -37,6 +40,7 @@ export const asia = [
         populationtxt: "1,748,296",
         areatxt: "780 km²",
         gdp: 49057,
+        gdptext: "$49,057",
     },
     {
         name: "Bangladesh",
@@ -45,6 +49,7 @@ export const asia = [
         populationtxt: "166,303,498",
         areatxt: "147,570 km²",
         gdp: 5139,
+        gdptext: "$5,139",
     },
     {
         name: "Bhutan",
@@ -53,6 +58,7 @@ export const asia = [
         populationtxt: "779,898",
         areatxt: "38,394 km²",
         gdp: 12058,
+        gdptext: "$12,058",
     },
     {
         name: "Brunei",
@@ -61,6 +67,7 @@ export const asia = [
         populationtxt: "441,532",
         areatxt: "5,765 km²",
         gdp: 61816,
+        gdptext: "$61,816",
     },
     {
         name: "Cambodia",
@@ -69,6 +76,7 @@ export const asia = [
         populationtxt: "16,946,438",
         areatxt: "181,035 km²",
         gdp: 4441,
+        gdptext: "$4,441",
     },
     {
         name: "China",
@@ -77,6 +85,7 @@ export const asia = [
         populationtxt: "1,444,216,107",
         areatxt: "9,596,961 km²",
         gdp: 17206,
+        gdptext: "$17,206",
     },
     {
         name: "Georgia",
@@ -85,6 +94,7 @@ export const asia = [
         populationtxt: "3,979,765",
         areatxt: "69,000 km²",
         gdp: 15142,
+        gdptext: "$15,142",
     },
     {
         name: "India",
@@ -93,6 +103,7 @@ export const asia = [
         populationtxt: "1,393,409,038",
         areatxt: "3,287,263 km²",
         gdp: 6284,
+        gdptext: "$6,284",
     },
     {
         name: "Indonesia",
@@ -101,6 +112,7 @@ export const asia = [
         populationtxt: "276,361,783",
         areatxt: "1,502,029 km²",
         gdp: 12345,
+        gdptext: "$12,345",
     },
     {
         name: "Iran",
@@ -109,6 +121,7 @@ export const asia = [
         populationtxt: "85,028,759",
         areatxt: "1,648,195 km²",
         gdp: 11963,
+        gdptext: "$11,963",
     },
     {
         name: "Iraq",
@@ -117,6 +130,7 @@ export const asia = [
         populationtxt: "41,179,350",
         areatxt: "438,317 km²",
         gdp: 9952,
+        gdptext: "$9,952",
     },
     {
         name: "Israel",
@@ -125,6 +139,7 @@ export const asia = [
         populationtxt: "8,789,774",
         areatxt: "22,072 km²",
         gdp: 39126,
+        gdptext: "$39,126",
     },
     {
         name: "Japan",
@@ -133,6 +148,7 @@ export const asia = [
         populationtxt: "126,050,804",
         areatxt: "377,930 km²",
         gdp: 41637,
+        gdptext: "$41,637",
     },
     {
         name: "Jordan",
@@ -141,6 +157,7 @@ export const asia = [
         populationtxt: "10,269,021",
         areatxt: "89,342 km²",
         gdp: 10007,
+        gdptext: "$10,007",
     },
     {
         name: "Kazakhstan",
@@ -149,6 +166,7 @@ export const asia = [
         populationtxt: "18,994,962",
         areatxt: "2,544,900 km²",
         gdp: 26589,
+        gdptext: "$26,589",
     },
     {
         name: "Kuwait",
@@ -157,6 +175,7 @@ export const asia = [
         populationtxt: "4,328,550",
         areatxt: "17,818 km²",
         gdp: 41735,
+        gdptext: "$41,735",
     },
     {
         name: "Kyrgyzstan",
@@ -165,6 +184,7 @@ export const asia = [
         populationtxt: "6,628,356",
         areatxt: "199,951 km²",
         gdp: 4824,
+        gdptext: "$4,824",
     },
     {
         name: "Laos",
@@ -173,6 +193,7 @@ export const asia = [
         populationtxt: "7,379,358",
         areatxt: "236,800 km²",
         gdp: 8221,
+        gdptext: "$8,221",
     },
     {
         name: "Lebanon",
@@ -181,6 +202,7 @@ export const asia = [
         populationtxt: "6,769,146",
         areatxt: "10,452 km²",
         gdp: 11562,
+        gdptext: "$11,562",
     },
     {
         name: "Malaysia",
@@ -189,6 +211,7 @@ export const asia = [
         populationtxt: "32,776,194",
         areatxt: "330,803 km²",
         gdp: 27287,
+        gdptext: "$27,287",
     },
     {
         name: "Maldives",
@@ -197,6 +220,7 @@ export const asia = [
         populationtxt: "543,617",
         areatxt: "300 km²",
         gdp: 22965,
+        gdptext: "$22,965",
     },
     {
         name: "Mongolia",
@@ -205,6 +229,7 @@ export const asia = [
         populationtxt: "3,329,289",
         areatxt: "1,564,110 km²",
         gdp: 12259,
+        gdptext: "$12,259",
     },
     {
         name: "Myanmar",
@@ -213,6 +238,7 @@ export const asia = [
         populationtxt: "54,806,012",
         areatxt: "676,578 km²",
         gdp: 5179,
+        gdptext: "$5,179",
     },
     {
         name: "Nepal",
@@ -221,6 +247,7 @@ export const asia = [
         populationtxt: "29,674,920",
         areatxt: "147,181 km²",
         gdp: 3586,
+        gdptext: "$3,586",
     },
     {
         name: "North Korea",
@@ -229,6 +256,7 @@ export const asia = [
         populationtxt: "25,887,041",
         areatxt: "120,538 km²",
         gdp: 1700,
+        gdptext: "$1,700",
     },
     {
         name: "Oman",
@@ -237,6 +265,7 @@ export const asia = [
         populationtxt: "5,223,375",
         areatxt: "309,500 km²",
         gdp: 29908,
+        gdptext: "$29,908",
     },
     {
         name: "Pakistan",
@@ -245,6 +274,7 @@ export const asia = [
         populationtxt: "225,199,937",
         areatxt: "881,913 km²",
         gdp: 5160,
+        gdptext: "$5,160",
     },
     // {
     //     name: "Palestine",
@@ -259,6 +289,7 @@ export const asia = [
         populationtxt: "111,046,913",
         areatxt: "300,000 km²",
         gdp: 8574,
+        gdptext: "$8,574",
     },
     {
         name: "Qatar",
@@ -267,6 +298,7 @@ export const asia = [
         populationtxt: "2,930,528",
         areatxt: "652230 km²",
         gdp: 91897,
+        gdptext: "$91,897",
     },
     {
         name: "Saudi Arabia",
@@ -275,6 +307,7 @@ export const asia = [
         populationtxt: "35,340,683",
         areatxt: "46,273 km²",
         gdp: 46273,
+        gdptext: "$46,273",
     },
     {
         name: "Singapore",
@@ -283,6 +316,7 @@ export const asia = [
         populationtxt: "5,896,686",
         areatxt: "725 km²",
         gdp: 95603,
+        gdptext: "$95,603",
     },
     {
         name: "South Korea",
@@ -291,6 +325,7 @@ export const asia = [
         populationtxt: "51,305,186",
         areatxt: "100,210 km²",
         gdp: 44292,
+        gdptext: "$44,292",
     },
     {
         name: "Sri Lanka",
@@ -299,6 +334,7 @@ export const asia = [
         populationtxt: "21,497,310",
         areatxt: "65,610 km²",
         gdp: 13114,
+        gdptext: "$13,114",
     },
     {
         name: "Syria",
@@ -307,6 +343,7 @@ export const asia = [
         populationtxt: "18,275,702",
         areatxt: "185,180 km²",
         gdp: 2900,
+        gdptext: "$2,900",
     },
     {
         name: "Taiwan",
@@ -315,6 +352,7 @@ export const asia = [
         populationtxt: "23,855,010",
         areatxt: "36,193 km²",
         gdp: 54020,
+        gdptext: "$54,020",
     },
     {
         name: "Tajikistan",
@@ -323,6 +361,7 @@ export const asia = [
         populationtxt: "9,749,627",
         areatxt: "143,100 km²",
         gdp: 3560,
+        gdptext: "$3,560",
     },
     {
         name: "Thailand",
@@ -331,6 +370,7 @@ export const asia = [
         populationtxt: "69,950,850",
         areatxt: "513,120 km²",
         gdp: 18073,
+        gdptext: "$18,073",
     },
     {
         name: "Timor Leste",
@@ -339,6 +379,7 @@ export const asia = [
         populationtxt: "1,343,873",
         areatxt: "14,874 km²",
         gdp: 4031,
+        gdptext: "$4,031",
     },
     {
         name: "Turkey",
@@ -347,6 +388,7 @@ export const asia = [
         populationtxt: "85,042,738",
         areatxt: "759,592 km²",
         gdp: 28294,
+        gdptext: "$28,294",
     },
     {
         name: "Turkmenistan",
@@ -355,6 +397,7 @@ export const asia = [
         populationtxt: "6,117,924",
         areatxt: "488,100 km²",
         gdp: 16711,
+        gdptext: "$16,711",
     },
     {
         name: "United Arab Emirates",
@@ -363,6 +406,7 @@ export const asia = [
         populationtxt: "9,991,089",
         areatxt: "83,600 km²",
         gdp: 58466,
+        gdptext: "$58,466",
     },
     {
         name: "Uzbekistan",
@@ -371,6 +415,7 @@ export const asia = [
         populationtxt: "33,935,763",
         areatxt: "447,400 km²",
         gdp: 7378,
+        gdptext: "$7,378",
     },
     {
         name: "Vietnam",
@@ -379,6 +424,7 @@ export const asia = [
         populationtxt: "98,168,833",
         areatxt: "331,212 km²",
         gdp: 10755,
+        gdptext: "$10,755",
     },
     {
         name: "Yemen",
@@ -387,5 +433,6 @@ export const asia = [
         populationtxt: "30,490,640",
         areatxt: "527,968 km²",
         gdp: 1931,
+        gdptext: "$1,931",
     },
 ];
