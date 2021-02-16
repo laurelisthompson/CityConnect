@@ -10,36 +10,43 @@ export const africa = [
                 name: "Lagos",
                 population: 9,
                 ranking: 1,
+                populationtxt: "9,000,000",
             },
             {
                 name: "Kano",
                 population: 3.626068,
                 ranking: 6,
+                populationtxt: "3,626,068",
             },
             {
                 name: "Ibadan",
                 population: 3.565108,
                 ranking: 7,
+                populationtxt: "3,565,108",
             },
             {
                 name: "Kaduna",
                 population: 1.582102,
                 ranking: 27,
+                populationtxt: "1,582,102",
             },
             {
                 name: "Port Harcourt",
                 population: 1.148665,
                 ranking: 41,
+                populationtxt: "1,148,665",
             },
             {
                 name: "Benin City",
                 population: 1.125058,
                 ranking: 42,
+                populationtxt: "1,125,058",
             },
             {
                 name: "Maiduguri",
                 population: 1.112449,
                 ranking: 43,
+                populationtxt: "1,112,449",
             },
         ]
     },
@@ -50,11 +57,13 @@ export const africa = [
                 name: "Kinshasa",
                 population: 7.785965,
                 ranking: 2,
+                populationtxt: "7,785,965",
             },
             {
                 name: "Lubumbashi",
                 population: 1.37377,
                 ranking: 31,
+                populationtxt: "1,373,770",
             },
         ]
     },
@@ -65,16 +74,19 @@ export const africa = [
                 name: "Cairo",
                 population: 7.734614,
                 ranking: 3,
+                populationtxt: "7,734,614",
             },
             {
                 name: "Alexandria",
                 population: 3.811516,
                 ranking: 4,
+                populationtxt: "3,811,516",
             },
             {
                 name: "Giza",
                 population: 2.443203,
                 ranking: 17,
+                populationtxt: "2,443,203",
             },
         ]
     },
@@ -85,6 +97,7 @@ export const africa = [
                 name: "Abidjan",
                 population: 3.677115,
                 ranking: 5,
+                populationtxt: "3,677,115",
             },
         ]
     },
@@ -95,26 +108,31 @@ export const africa = [
                 name: "Cape Town",
                 population: 3.433441,
                 ranking: 8,
+                populationtxt: "3,433,441",
             },
             {
                 name: "Durban",
                 population: 3.120282,
                 ranking: 10,
+                populationtxt: "3,120,282",
             },
             {
                 name: "Johannesburg",
                 population: 2.026469,
                 ranking: 18,
+                populationtxt: "2,026,469",
             },
             {
                 name: "Soweto",
                 population: 1.695047,
                 ranking: 24,
+                populationtxt: "1,695,047",
             },
             {
                 name: "Pretoria",
                 population: 1.619438,
                 ranking: 26,
+                populationtxt: "1,619,438",
             },
         ]
     },
@@ -125,11 +143,13 @@ export const africa = [
                 name: "Casablanca",
                 population: 3.144909,
                 ranking: 9,
+                populationtxt: "3,144,909",
             },
             {
                 name: "Rabat",
                 population: 1.655753,
                 ranking: 25,
+                populationtxt: "1,655,753",
             },
         ]
     },
@@ -140,6 +160,7 @@ export const africa = [
                 name: "Luanda",
                 population: 2.776168,
                 ranking: 11,
+                populationtxt: "2,776,168",
             },
         ]
     },
@@ -150,6 +171,7 @@ export const africa = [
                 name: "Addis Ababa",
                 population: 2.757729,
                 ranking: 12,
+                populationtxt: "2,757,729",
             },
         ]
     },
@@ -160,6 +182,7 @@ export const africa = [
                 name: "Nairobi",
                 population: 2.750547,
                 ranking: 13,
+                populationtxt: "2,750,547",
             },
         ]
     },
@@ -170,6 +193,7 @@ export const africa = [
                 name: "Dar es Salaam",
                 population: 2.698652,
                 ranking: 14,
+                populationtxt: "2,698,652",
             },
         ]
     },
@@ -180,6 +204,7 @@ export const africa = [
                 name: "Mogadishu",
                 population: 2.587183,
                 ranking: 15,
+                populationtxt: "2,587,183",
             },
         ]
     },
@@ -190,6 +215,7 @@ export const africa = [
                 name: "Dakar",
                 population: 2.4764,
                 ranking: 16,
+                populationtxt: "2,476,400",
             },
         ]
     },
@@ -200,6 +226,7 @@ export const africa = [
                 name: "Algiers",
                 population: 1.977663,
                 ranking: 19,
+                populationtxt: "1,977,663",
             },
         ]
     },
@@ -210,11 +237,13 @@ export const africa = [
                 name: "Khartoum",
                 population: 1.974647,
                 ranking: 20,
+                populationtxt: "1,974,647",
             },
             {
                 name: "Omdurman",
                 population: 1.2,
                 ranking: 38,
+                populationtxt: "1,200,000",
             },
         ]
     },
@@ -225,11 +254,13 @@ export const africa = [
                 name: "Accra",
                 population: 1.963264,
                 ranking: 21,
+                populationtxt: "1,963,264",
             },
             {
                 name: "Kumasi",
                 population: 1.468609,
                 ranking: 29,
+                populationtxt: "1,468,609",
             },
         ]
     },
@@ -240,11 +271,13 @@ export const africa = [
                 name: "Camayenne",
                 population: 1.871242,
                 ranking: 22,
+                populationtxt: "1,871,242",
             },
             {
                 name: "Conakry",
                 population: 1.7672,
                 ranking: 23,
+                populationtxt: "1,767,200",
             },
         ]
     },
@@ -255,6 +288,7 @@ export const africa = [
                 name: "Harare",
                 population: 1.542813,
                 ranking: 28,
+                populationtxt: "1,542,813",
             },
         ]
     },
@@ -265,6 +299,7 @@ export const africa = [
                 name: "Antananariva",
                 population: 1.391433,
                 ranking: 30,
+                populationtxt: "1,391,433",
             },
         ]
     },
@@ -275,6 +310,7 @@ export const africa = [
                 name: "Kampala",
                 population: 1.353189,
                 ranking: 32,
+                populationtxt: "1,353,189",
             },
         ]
     },
@@ -285,11 +321,13 @@ export const africa = [
                 name: "Douala",
                 population: 1.338082,
                 ranking: 33,
+                populationtxt: "1,338,082",
             },
             {
                 name: "Yaounde",
                 population: 1.299369,
                 ranking: 34,
+                populationtxt: "1,299,369",
             },
         ]
     },
@@ -300,6 +338,7 @@ export const africa = [
                 name: "Bamako",
                 population: 1.297281,
                 ranking: 35,
+                populationtxt: "1,297,281",
             },
         ]
     },
@@ -310,6 +349,7 @@ export const africa = [
                 name: "Brazzaville",
                 population: 1.284609,
                 ranking: 36,
+                populationtxt: "1,284,609",
             },
         ]
     },
@@ -320,6 +360,7 @@ export const africa = [
                 name: "Lusaka",
                 population: 1.26744,
                 ranking: 37,
+                populationtxt: "1,267,440",
             },
         ]
     },
@@ -330,6 +371,7 @@ export const africa = [
                 name: "Maputo",
                 population: 1.191613,
                 ranking: 39,
+                populationtxt: "1,191,613",
             },
         ]
     },
@@ -340,6 +382,7 @@ export const africa = [
                 name: "Tripoli",
                 population: 1.150989,
                 ranking: 40,
+                populationtxt: "1,150,989",
             },
         ]
     },
@@ -350,6 +393,7 @@ export const africa = [
                 name: "Ouagadougou",
                 population: 1.086505,
                 ranking: 44,
+                populationtxt: "1,086,505",
             },
         ]
     },

@@ -10,26 +10,31 @@ export const oceania = [
                 name: "Sydney",
                 population: 4.627345,
                 ranking: 1,
+                populationtxt: "4,627,345",
             },
             {
                 name: "Melbourne",
                 population: 4.246375,
                 ranking: 2,
+                populationtxt: "4,246,375",
             },
             {
                 name: "Brisbane",
                 population: 2.189878,
                 ranking: 3,
+                populationtxt: "2,189,878",
             },
             {
                 name: "Perth",
                 population: 1.896548,
                 ranking: 4,
+                populationtxt: "1,896,548",
             },
             {
                 name: "Adelaide",
                 population: 1.225235,
                 ranking: 5,
+                populationtxt: "1,225,235",
             },
         ]
     },
