@@ -24,8 +24,8 @@ export default countriesGDPMapping => {
     node = node.data(root.descendants().slice(1)); //get all node children, exclude itself
     node = node.join("circle");
     node.attr("fill", nd => {
-        if (!nd.children) return "#e86f50";
-        else return "#f4b7a8";
+        if (!nd.children) return "#E86F50";
+        else return "#F4B7A8";
     });
     node = node.style("cursor", "pointer");
     node = node.on("mouseover", function () {
@@ -83,7 +83,7 @@ export default countriesGDPMapping => {
             let yTr = yDif * prop;
             return `translate(${xTr}, ${yTr})`;
         })
-            .style("fill", node => node.parent === focus ? "#f2f3f4" : null)
+            .style("fill", node => node.parent === focus ? "#F2F3F4" : null)
             .attr("text-anchor", "middle");
 
         expBio.attr("transform", nd => {
@@ -93,7 +93,7 @@ export default countriesGDPMapping => {
             let yTr = yDif * prop;
             return `translate(${xTr}, ${yTr})`;
         })
-            .style("fill", node => node.parent === focus ? "#f2f3f4" : null)
+            .style("fill", node => node.parent === focus ? "#F2F3F4" : null)
             .attr("text-anchor", "middle");
 
         node.attr("r", nd => {

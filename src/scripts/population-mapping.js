@@ -24,12 +24,12 @@ export default countriesPopulationMapping => {
     node = node.data(root.descendants().slice(1)); //get all node children, exclude itself
     node = node.join("circle");
     node.attr("fill", nd => {
-        if (!nd.children) return "#2b9d8f";
-        else return "#aad8d2";
+        if (!nd.children) return "#2B9D8F";
+        else return "#AAD8D2";
     });
     node = node.style("cursor", "pointer");
     node = node.on("mouseover", function () {
-        d3.select(this).attr("stroke", "#e86f50");
+        d3.select(this).attr("stroke", "#E86F50");
         d3.select(this).attr("stroke-width", "1.5px");
     });
     node = node.on("mouseout", function () {
@@ -83,7 +83,7 @@ export default countriesPopulationMapping => {
             let yTr = yDif * prop;
             return `translate(${xTr}, ${yTr})`;
         })
-            .style("fill", node => node.parent === focus ? "#f2f3f4" : null)
+            .style("fill", node => node.parent === focus ? "#F2F3F4" : null)
             .attr("text-anchor", "middle");
 
         expBio.attr("transform", nd => {
@@ -93,7 +93,7 @@ export default countriesPopulationMapping => {
             let yTr = yDif * prop;
             return `translate(${xTr}, ${yTr})`;
         })
-            .style("fill", node => node.parent === focus ? "#f2f3f4" : null)
+            .style("fill", node => node.parent === focus ? "#F2F3F4" : null)
             .attr("text-anchor", "middle");
 
         node.attr("r", nd => {

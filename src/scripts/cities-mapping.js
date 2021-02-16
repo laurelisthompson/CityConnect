@@ -26,8 +26,8 @@ export default citiesPopulationMapping => {
 	node = node.join("circle");
 	node.attr("fill", nd => {
 		if (!nd.children) return "#254652";
-		else if (nd.depth === 1) return "#bec8cb";
-		else return "#667e86";
+		else if (nd.depth === 1) return "#BEC8CB";
+		else return "#667E86";
 	});
 	node = node.style("cursor", "pointer");
 	node = node.on("mouseover", function() { 
@@ -86,7 +86,7 @@ export default citiesPopulationMapping => {
 				let yTr = yDif * prop;
 				return `translate(${xTr}, ${yTr})`;
 			})
-		.style("fill", node => node.parent === focus ? "#f2f3f4" : null)
+		.style("fill", node => node.parent === focus ? "#F2F3F4" : null)
 		.attr("text-anchor", "middle");
 
 		expBio.attr("transform", nd => {
@@ -96,7 +96,7 @@ export default citiesPopulationMapping => {
 			let yTr = yDif * prop;
 			return `translate(${xTr}, ${yTr})`;
 		})
-		.style("fill", node => node.parent === focus ? "#f2f3f4" : null)
+		.style("fill", node => node.parent === focus ? "#F2F3F4" : null)
 		.attr("text-anchor", "middle");
 
 		node.attr("r", nd => {

@@ -60,7 +60,7 @@ export default countriesAreaMapping => {
     expBio = expBio.style("display", node => node.parent === root ? "inline" : "none");
     expBio = expBio.style("font", "16px sans-serif");
     expBio = expBio.style("font-family", "Montserrat");
-    expBio = expBio.style("fill", "#f2f3f4");
+    expBio = expBio.style("fill", "#F2F3F4");
 
     // let v = [focus.x, focus.y, focus.r * 2];
     const zoomTo = (v) => { //takes in a view 
@@ -84,8 +84,8 @@ export default countriesAreaMapping => {
             let yTr = yDif * prop;
             return `translate(${xTr}, ${yTr})`;
         })
-            .style("fill", node => node.parent === focus ? "#f2f3f4" : null)
-            .attr("text-anchor", "middle");
+        .style("fill", node => node.parent === focus ? "#F2F3F4" : null)
+        .attr("text-anchor", "middle");
 
         expBio.attr("transform", nd => {
             let xDif = nd.x - currentView[0];
@@ -94,8 +94,8 @@ export default countriesAreaMapping => {
             let yTr = yDif * prop;
             return `translate(${xTr}, ${yTr})`;
         })
-            .style("fill", node => node.parent === focus ? "#f2f3f4" : null)
-            .attr("text-anchor", "middle");
+        .style("fill", node => node.parent === focus ? "#F2F3F4" : null)
+        .attr("text-anchor", "middle");
 
         node.attr("r", nd => {
             return nd.r * prop;
