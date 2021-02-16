@@ -43,13 +43,11 @@ export default citiesPopulationMapping => {
 			event.stopPropagation();
 		};
 	});
-	
 
 	let textLabel = svg.append("g");
 	textLabel = textLabel.selectAll("text");
 	textLabel = textLabel.data(root.descendants());
 	textLabel = textLabel.join("text");
-	textLabel = textLabel.attr("class", "tooltip");
 	textLabel = textLabel.text(node => node.data.name);
 	textLabel = textLabel.style("display", node => node.parent === root ? "inline" : "none");
 	textLabel = textLabel.style("font", "16px sans-serif");
@@ -61,6 +59,7 @@ export default citiesPopulationMapping => {
 	expBio = expBio.join("text");
 	expBio = expBio.text(node => node.data.populationtxt);
 	expBio = expBio.style("display", node => node.parent === root ? "inline" : "none");
+	expBio = expBio.style("color", "#F2F3F4");
 	expBio = expBio.style("font", "16px sans-serif");
 	expBio = expBio.style("font-family", "Montserrat");
 
@@ -96,7 +95,7 @@ export default citiesPopulationMapping => {
 			let yTr = yDif * prop;
 			return `translate(${xTr}, ${yTr})`;
 		})
-		.style("fill", node => node.parent === focus ? "#F2F3F4" : null)
+		.style("color", node => node.parent === focus ? "#F2F3F4" : null)
 		.attr("text-anchor", "middle");
 
 		node.attr("r", nd => {

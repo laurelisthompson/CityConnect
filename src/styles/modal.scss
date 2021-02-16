@@ -9,6 +9,12 @@
     z-index: 2000;
 }
 
+.modal-links {
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
 .modal {
     position: absolute;
     display: flex;
@@ -20,7 +26,7 @@
     top: 34%;
     left: 50%;
     width: 500px;
-    height: 400px;
+    height: 350px;
     padding: 20px 40px;
     border-radius: 3px;
     animation-name: modalFade;
@@ -29,15 +35,20 @@
 
     p {
         font-style: normal;
-        text-align: justify;
+        text-align: left;
+        justify-content: left;
         font-size: 14px;
         color: #f2f3f4;
     }
 
+    p.author {
+        margin-top: 20px;
+    }
+
     span {
         font-style: normal;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         font-size: 16px;
         font-weight: 600;
         color: #f2f3f4;
@@ -50,10 +61,12 @@
     }
 
     button {
-        margin-top: 10px;
+        margin-top: 5px;
         background-color: rgb(14, 109, 204);
         color: white;
         outline: none;
+        align-items: center;
+        justify-content: center;
     }
 
     button:hover {
@@ -64,6 +77,9 @@
         color: white;
         outline: none;
         margin: 5px 5px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
     }
 
     a:hover {
