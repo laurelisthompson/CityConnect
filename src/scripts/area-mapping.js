@@ -56,10 +56,11 @@ export default countriesAreaMapping => {
     expBio = expBio.selectAll("text");
     expBio = expBio.data(root.descendants());
     expBio = expBio.join("text");
-    expBio = expBio.text(node => node.data.area);
+    expBio = expBio.text(node => node.data.areatxt);
     expBio = expBio.style("display", node => node.parent === root ? "inline" : "none");
     expBio = expBio.style("font", "16px sans-serif");
     expBio = expBio.style("font-family", "Montserrat");
+    expBio = expBio.style("fill", "#f2f3f4");
 
     // let v = [focus.x, focus.y, focus.r * 2];
     const zoomTo = (v) => { //takes in a view 
