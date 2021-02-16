@@ -56,7 +56,7 @@ export default countriesGDPMapping => {
     expBio = expBio.selectAll("text");
     expBio = expBio.data(root.descendants());
     expBio = expBio.join("text");
-    expBio = expBio.text(node => node.data.gdp);
+    expBio = expBio.text(node => node.data.gdptext);
     expBio = expBio.style("display", node => node.parent === root ? "inline" : "none");
     expBio = expBio.style("font", "16px sans-serif");
     expBio = expBio.style("font-family", "Montserrat");

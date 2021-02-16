@@ -56,7 +56,7 @@ export default countriesPopulationMapping => {
     expBio = expBio.selectAll("text");
     expBio = expBio.data(root.descendants());
     expBio = expBio.join("text");
-    expBio = expBio.text(node => node.data.population);
+    expBio = expBio.text(node => node.data.populationtxt);
     expBio = expBio.style("display", node => node.parent === root ? "inline" : "none");
     expBio = expBio.style("font", "16px sans-serif");
     expBio = expBio.style("font-family", "Montserrat");
