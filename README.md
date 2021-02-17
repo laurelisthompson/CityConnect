@@ -13,6 +13,8 @@ people.
 
 Data Correlator will be a single-page app that features a circle packing graph filtered by continent and country. You can explore the loaded datasets through the interactive graph and learn more about how countries vary by area, population, and GDP and the ways these correlate with each other.
 
+![](/images/comparison.gif)
+
 ## Functionality & MVP
 
 With Data Correlator, users will be able to:
