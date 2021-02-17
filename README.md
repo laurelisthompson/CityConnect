@@ -2,6 +2,8 @@
 
 [Link to Data Correlator](https://laurelisthompson.github.io/data-correlator/)
 
+![](https://drive.google.com/file/d/19cet_z3kbgLZjYUx7Rlk7lob9_PDhbeg/view?usp=sharing)
+
 ## Background
 
 Data Correlator will be a single-page app that features a circle packing graph filtered by continent and country. You can explore the loaded datasets through the interactive graph and learn more about how countries vary by area, population, and GDP and the ways these correlate with each other.
