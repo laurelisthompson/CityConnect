@@ -16,7 +16,6 @@ export default citiesPopulationMapping => {
 
 	let svg = d3.create("svg");
 	svg = svg.attr("viewBox", [`-400 -400 800 800`]);
-	// svg = svg.attr("viewBox", [`-315 -315 650 650`]);
 	svg = svg.attr("class", "svg-content");
 	svg = svg.on("click", (event) => zoom(event, root));
 
@@ -108,13 +107,6 @@ export default citiesPopulationMapping => {
 	const zoom = (event, nd) => {
 		const oldFocus = focus;
 		focus = nd;
-
-		// const zooming = function(){
-		// 	//create interpolator for the two views
-		// 	//t is the % of duration that has elapsed since the click
-		// 	const interpolator = d3.interpolateZoom(currentView, [this.x, this.y, this.r * 2]);
-		// 	return t => zoomTo(interpolator(t));
-		// };
 
 		//create zoom transition constant, set duration and call tween
 		let zoomTransition = svg.transition();
