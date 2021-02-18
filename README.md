@@ -15,20 +15,9 @@ Data Correlator will be a single-page app that features a circle packing graph f
 
 ![](/images/comparison.gif)
 
-## Functionality & MVP
-
-With Data Correlator, users are able to:
-
-1. See a circle packing map of experiences to explore
-2. Interact with the circle packing graph with your mouse
-3. Select different circle packing graphs to compare
-
 ## Technologies
 
-Data Correlator uses:
-
-1. JavaScript, HTML, CSS
-2. D3.js library to create circle packing graph visualization
+Data Correlator is built with JavaScript, HTML, and SCSS. The interactive circle packing graphs are built with the D3.js library, and the page uses only JS event listeners and DOM manipulation to update itself.
 
 ## Challenges
 
