@@ -17,20 +17,23 @@ Data Correlator will be a single-page app that features a circle packing graph f
 
 ## Functionality & MVP
 
-With Data Correlator, users will be able to:
+With Data Correlator, users are able to:
 
 1. See a circle packing map of experiences to explore
 2. Interact with the circle packing graph with your mouse
 3. Select different circle packing graphs to compare
 
-This project will also include:
-
-1. A modal describing the project and the developer
-2. A production README
-
 ## Technologies
 
-Data Correlator will use:
+Data Correlator uses:
 
 1. JavaScript, HTML, CSS
 2. D3.js library to create circle packing graph visualization
+
+## Challenges
+
+The main challenges were incorporating the D3 library to allow for an interactive circle packing graph. I created the nodes to be set up with their parent and children nodes, so that each node was linked with a set of dependents. 
+
+The zoomTo function takes in a view and then finds the proportion of the width to the diameter, and updates the chat view to align with the argument view. It then transforms the labels and nodes and updates the node's radius.
+
+The zoom function then takes in an event and a node. It creates an old focus variable that stores the previous focus and sets the focus to the new node selected. It creates a transition constant by invoking transition on the svg and set's the transition's duration. I then am able to call on the transition and create an interpolator between the old and new views, so that the transition is as smooth as possible. This way as you are manueving throughout the data sets, you are able to understand the relationships between the nodes much more clearly. 
